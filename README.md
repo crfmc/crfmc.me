@@ -1,3 +1,7 @@
+# crfmc.me
+
+### The repository containing my personal website's first version
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
