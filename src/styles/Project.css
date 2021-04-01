@@ -1,0 +1,462 @@
+.project {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.project_description_container {
+  letter-spacing: 2px;
+  max-width: 40%;
+  max-height: 400px;
+}
+
+.project_description_container h1 {
+  font-size: 350%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  margin-bottom: 3%;
+}
+
+.project_description_container h3 {
+  font-weight: 100;
+  /* background-color: #ebe978;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  padding: 5%; */
+}
+
+.full_screen_img {
+  background-color: white;
+  width: 75%;
+  overflow: auto;
+  margin-top: 15%;
+  margin-left: 8%;
+  border-color: black;
+  border-width: 20px;
+  border-style: solid;
+  max-height: 295px;
+  padding: 0;
+}
+
+.full_screen_img img {
+  width: 100%;
+}
+
+.last_image {
+  position: absolute;
+  color: white;
+  width: 5%;
+  padding: 0;
+  margin-top: 33%;
+  margin-left: 17%;
+  z-index: 2;
+  font-weight: 1000;
+  font-size: 300%;
+  border: none;
+  background-color: transparent;
+  text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+    0 -1px 5px black;
+}
+
+button:active {
+  font-size: 290%;
+  text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black,
+    0 -1px 3px black;
+  border: none;
+}
+
+.next_image {
+  position: absolute;
+  color: white;
+  width: 5%;
+  padding: 0;
+  margin-top: 33%;
+  margin-left: 22%;
+  z-index: 2;
+  font-weight: 1000;
+  font-size: 300%;
+  border: none;
+  background-color: transparent;
+  text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+    0 -1px 5px black;
+}
+
+.last_image:hover {
+  cursor: pointer;
+}
+
+.next_image:hover {
+  cursor: pointer;
+}
+
+.project_image_container {
+  display: flex;
+  background-image: url("../webexamples/desktop-2.png");
+  width: 45%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+  padding-bottom: 15%;
+  height: 419px;
+}
+
+/* ———————————————————————————————————————————— */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/*—————————— Beyond is styling for smallest tablet version ——————————*/
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .project_image_container {
+    display: block;
+    width: auto;
+    margin-right: 10%;
+    margin-left: 14%;
+    margin-top: 5%;
+    height: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+  }
+  .full_screen_img {
+    width: 73%;
+    margin-top: 14.5%;
+    margin-bottom: 0;
+  }
+
+  .last_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 2%;
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  .next_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 2%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+  .arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project_description_container {
+    text-align: center;
+    max-width: none;
+    max-height: none;
+    padding: 10%;
+    padding-top: 0;
+  }
+}
+
+/*—————————— Beyond is styling for second smallest mobile version ——————————*/
+
+@media (max-width: 425px) {
+  .full_project_container {
+    background-color: beige;
+    padding-bottom: 30%;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .project_image_container {
+    display: block;
+    background: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project_description_container {
+    text-align: center;
+    max-width: none;
+    max-height: none;
+    padding: 2%;
+    padding-top: 0;
+  }
+
+  .project_description_container h1 {
+    font-size: 220%;
+  }
+
+  .project_description_container h3 {
+    font-size: 16px;
+    width: auto;
+    padding: 5%;
+  }
+
+  .full_screen_img {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0px 2px 8px black;
+    height: 220px;
+  }
+
+  .arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .last_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  .next_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  button:active {
+    font-size: 400%;
+    text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black,
+      0 -1px 3px black;
+    border: none;
+  }
+}
+
+/*—————————— Beyond is styling for second smallest mobile version ——————————*/
+
+@media (max-width: 375px) {
+  .full_project_container {
+    background-color: beige;
+    padding-bottom: 30%;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .project_image_container {
+    display: block;
+    background: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project_description_container {
+    text-align: center;
+    max-width: none;
+    max-height: none;
+    padding: 2%;
+    padding-top: 0;
+  }
+
+  .project_description_container h1 {
+    font-size: 220%;
+  }
+
+  .project_description_container h3 {
+    font-size: 16px;
+    width: auto;
+    padding: 5%;
+  }
+
+  .full_screen_img {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0px 2px 8px black;
+    height: 165px;
+  }
+
+  .arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .last_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  .next_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  button:active {
+    font-size: 400%;
+    text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black,
+      0 -1px 3px black;
+    border: none;
+  }
+}
+
+/*—————————— Beyond is styling for smallest mobile version ——————————*/
+
+@media (max-width: 375px) {
+  .full_project_container {
+    background-color: beige;
+    padding-bottom: 30%;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .project_image_container {
+    display: block;
+    background: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project_description_container {
+    text-align: center;
+    max-width: none;
+    max-height: none;
+    padding: 2%;
+    padding-top: 0;
+  }
+
+  .project_description_container h1 {
+    font-size: 220%;
+  }
+
+  .project_description_container h3 {
+    font-size: 16px;
+    width: auto;
+    padding: 5%;
+  }
+
+  .full_screen_img {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0px 2px 8px black;
+    height: 165px;
+  }
+
+  .arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .last_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  .next_image {
+    position: relative;
+    color: white;
+    width: auto;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0;
+    font-size: 400%;
+    border: none;
+    background-color: transparent;
+    text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black,
+      0 -1px 5px black;
+  }
+
+  button:active {
+    font-size: 400%;
+    text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black,
+      0 -1px 3px black;
+    border: none;
+  }
+}

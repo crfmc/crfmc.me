@@ -1,0 +1,534 @@
+.wrapper {
+  min-height: 750px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bar {
+  position: absolute;
+  display: flex;
+  width: 96%;
+  top: 0;
+  margin-left: 2%;
+  z-index: 2;
+}
+
+.logo_container {
+  width: 9%;
+}
+
+.logo {
+  width: 100%;
+  padding-left: 0;
+  transition: 250ms ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact {
+  color: inherit;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 1%;
+  padding-top: 0;
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 20px white;
+  transition: 200ms ease-in;
+}
+
+.contact:hover {
+  text-shadow: 1px 1px 20px gray;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.about {
+  color: inherit;
+  margin-left: 62%;
+  margin-right: 5%;
+  margin-top: 0;
+  padding: 1%;
+  padding-top: 0;
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 20px white;
+  transition: 200ms ease-in;
+}
+
+.about:hover {
+  text-shadow: 1px 1px 20px gray;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.introduction {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 15%;
+  z-index: 2;
+  left: 10%;
+  text-align: left;
+  font-size: 230%;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.hello {
+  font-size: 230%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
+.my_name {
+  font-size: 100%;
+  padding-top: 2%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-left: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* .i_am {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+} */
+
+.i_am_a {
+  font-size: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 2%;
+  height: 15%;
+  font-weight: 400;
+}
+
+/* .i_am_selector {
+  display: block;
+  width: 45%;
+  line-height: 8px;
+  padding: 1%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  font-size: 75%;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  background-size: 5%;
+} */
+
+.arrow {
+  position: absolute;
+  width: 4%;
+  top: 80%;
+  left: 48%;
+  font-size: 250%;
+  text-decoration: none;
+  z-index: 2;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: -5px 5px 15px black;
+  border-radius: 50px;
+  animation: arrow 1s infinite alternate-reverse linear;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes arrow {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+#workpage {
+  background-color: white;
+}
+
+/* For windowWidth < 321px */
+
+.bottom_nav {
+  position: fixed;
+  display: inline-block;
+  background-color: beige;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 15px 0px 15px 0px;
+  z-index: 3;
+  text-decoration: none;
+}
+
+.bottom_nav a {
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  width: 25%;
+  text-align: center;
+}
+
+/*—————————— Beyond is styling for smallest tablet version ——————————*/
+@media (max-width: 768px) {
+  .wrapper {
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact {
+    color: inherit;
+    margin-left: 0;
+    margin-top: 3%;
+    padding: 1%;
+    padding-top: 0;
+    font-size: 100%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 20px white;
+    transition: 200ms ease-in;
+  }
+
+  .contact:hover {
+    transform: none;
+  }
+
+  .about {
+    color: inherit;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 3%;
+    padding: 1%;
+    padding-top: 0;
+    font-size: 100%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 20px white;
+    transition: 200ms ease-in;
+  }
+
+  .about:hover {
+    transform: none;
+  }
+  .introduction {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 18%;
+    z-index: 2;
+    left: 10%;
+    text-align: left;
+    font-size: 220%;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .hello {
+    font-size: 200%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 5%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 100;
+  }
+
+  .my_name {
+    font-size: 100%;
+    padding-top: 2%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding-left: 0;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  /* .i_am {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+} */
+
+  .i_am_a {
+    font-size: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-top: 2%;
+    height: 15%;
+    font-weight: 400;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 5%;
+    top: 75%;
+    left: 48%;
+    font-size: 200%;
+    text-decoration: none;
+    z-index: 2;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: -5px 5px 15px black;
+    border-radius: 50px;
+    animation: arrow 1s infinite alternate-reverse linear;
+  }
+}
+
+/*—————————— Beyond is styling for third smallest mobile version ——————————*/
+
+@media (max-width: 425px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+  }
+
+  .mini_banner {
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    max-height: 50px;
+  }
+
+  .logo_container {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 15%;
+  }
+
+  .mini_banner_name h4 {
+    margin: 10px 0 0 45px;
+    vertical-align: middle;
+    font-weight: 300;
+  }
+
+  .introduction {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    top: 10%;
+    text-align: left;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .hello {
+    font-size: 150%;
+    top: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 100;
+    margin-left: 7%;
+  }
+
+  .my_name {
+    font-size: 50%;
+    padding-top: 2%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding-left: 0;
+    margin-left: 7%;
+    font-weight: 300;
+  }
+
+  .i_am_a {
+    font-size: 50%;
+    width: 100%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-left: 7%;
+    height: 15%;
+    font-weight: 400;
+  }
+
+  .avi_container img {
+    width: 50%;
+    align-self: center;
+    border-radius: 100px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 50%;
+    margin-bottom: 40%;
+  }
+}
+
+/*—————————— Beyond is styling for second smallest mobile version ——————————*/
+
+@media (max-width: 375px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+  }
+
+  .mini_banner {
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    max-height: 50px;
+  }
+
+  .logo_container {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 15%;
+  }
+
+  .mini_banner_name h4 {
+    margin: 10px 0 0 45px;
+    vertical-align: middle;
+    font-weight: 300;
+  }
+
+  .introduction {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    top: 10%;
+    text-align: left;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .hello {
+    font-size: 150%;
+    top: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 100;
+    margin-left: 7%;
+  }
+
+  .my_name {
+    font-size: 50%;
+    padding-top: 2%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding-left: 0;
+    margin-left: 7%;
+    font-weight: 300;
+  }
+
+  .i_am_a {
+    font-size: 50%;
+    width: 100%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-left: 7%;
+    height: 15%;
+    font-weight: 400;
+  }
+
+  .avi_container img {
+    width: 50%;
+    align-self: center;
+    border-radius: 100px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 50%;
+    margin-bottom: 40%;
+  }
+}
+
+/*—————————— Beyond is styling for smallest mobile version ——————————*/
+
+@media (max-width: 320px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+  }
+
+  .mini_banner {
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    max-height: 50px;
+  }
+
+  .logo_container {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 15%;
+  }
+
+  .mini_banner_name h4 {
+    margin: 10px 0 0 45px;
+    vertical-align: middle;
+    font-weight: 300;
+  }
+
+  .introduction {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    top: 10%;
+    text-align: left;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .hello {
+    font-size: 150%;
+    top: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 100;
+    margin-left: 7%;
+  }
+
+  .my_name {
+    font-size: 50%;
+    padding-top: 2%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding-left: 0;
+    margin-left: 7%;
+    font-weight: 300;
+  }
+
+  .i_am_a {
+    font-size: 50%;
+    width: 100%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-left: 7%;
+    height: 15%;
+    font-weight: 400;
+  }
+
+  .avi_container img {
+    width: 50%;
+    align-self: center;
+    border-radius: 80px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 60%;
+    margin-bottom: 40%;
+  }
+}
