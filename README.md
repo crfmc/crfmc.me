@@ -1,6 +1,8 @@
 # crfmc.me
 
-### The repository containing my personal website's first version
+## The repository containing my personal website's first version
+
+This site was created using React.js, so here's them:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
