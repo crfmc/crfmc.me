@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import banner from "../header.jpg";
+// import header from "../header.jpg";
 import logo from "../personal_logo_transparent.png";
 import About from "../components/About.js";
 import Webdev from "../screens/Webdev";
@@ -30,6 +30,8 @@ export default class Landing extends Component {
 
   componentDidMount() {
     this.updateDimensions();
+    const banner = new Image();
+    // banner.src = header.fileName;
     window.addEventListener("resize", this.updateDimensions);
   }
 
@@ -69,7 +71,7 @@ export default class Landing extends Component {
           <div className="header">
             <div className="mini_banner">
               <div className="logo_container">
-                <img src={logo} className="logo" alt="" />
+                <img src={logo} className="logo" alt="Cesar's logo" />
               </div>
               <div className="mini_banner_name">
                 <h4></h4>
@@ -118,13 +120,13 @@ export default class Landing extends Component {
           <div
             className="header wrapper"
             style={{
-              backgroundImage: `url(${banner})`,
+              // backgroundImage: `${header})`,
             }}
           >
             <div className="bar">
               <div className="logo_container">
-                <a href="">
-                  <img src={logo} className="logo" alt="" />
+                <a href="./">
+                  <img src={logo} className="logo" alt="Cesar's logo" />
                 </a>
               </div>
               <a href="#about" className="about">

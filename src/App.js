@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Landing from "./components/Landing";
+import { css } from "@emotion/core";
 import "./App.css";
+import ClipLoader from "react-spinners/ClipLoader";
 
-function App() {
+function App()
+{
+  const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
+  
+  let [loading, setLoading] = useState(false);
+  let [color, setColor] = useState("#ffffff");
+
+  useEffect(() =>
+  {
+    setLoading(true)
+    setTimeout(() =>
+    {
+      setLoading(false)
+    })
+  }, 5000)
+  
   return (
     <div className="App">
-      <Landing />
-      {/* <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      {loading ?
+        <ClipLoader color={color} loading={loading} css={override} size={150} />
+        : <Landing />}
     </div>
   );
 }
