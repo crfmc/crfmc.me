@@ -1,0 +1,22 @@
+.greeting_container {
+  padding: 5%;
+}
+
+.hello {
+  font-size: 250%;
+  color: rgb(241, 240, 240);
+  margin: 0;
+  padding: none;
+}
+
+.name {
+  color: white;
+  font-size: 400%;
+  margin: 0;
+  padding: none;
+}
+
+.subtitle {
+  font-size: 200%;
+  color: rgb(241, 240, 240);
+}

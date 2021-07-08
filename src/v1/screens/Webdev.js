@@ -11,7 +11,7 @@ import quarantine_cuisine from "../webexamples/quarantine_cuisine_expand.pdf";
 import background1 from "../webexamples/portfolio_background1.jpg";
 import background2 from "../webexamples/portfolio_background2.jpg";
 import "../styles/Webdev.css";
-import banner from "../header.jpg";
+import banner from "../images/header.jpg";
 import swivel_black_1 from "../swivels/swivel_black_1.jpg";
 import swivel_black_2 from "../swivels/swivel_black_2.jpg";
 import swivel_black_3 from "../swivels/swivel_black_3.jpg";

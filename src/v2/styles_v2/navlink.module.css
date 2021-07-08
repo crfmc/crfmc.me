@@ -1,0 +1,43 @@
+.navlink_container {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  background: rgba(254, 249, 239, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid whitesmoke;
+  animation: slidein 2s;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  stroke: black;
+  stroke-width: 1px;
+  margin: 5% auto;
+}
+
+.subtext {
+  color: lightgrey;
+  margin: auto;
+  margin: 5% auto;
+}
+
+.nav_button {
+  margin: 5% auto;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(0px, 1000px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(100, 0px);
+    opacity: 1;
+  }
+}

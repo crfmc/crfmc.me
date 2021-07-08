@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 // import header from "../header.jpg";
-import logo from "../personal_logo_transparent.png";
-import About from "../components/About.js";
+import logo from "../images/crfmc_logo.svg";
+import About from "./About.js";
 import Webdev from "../screens/Webdev";
-import Footer from "../components/Footer.js";
+import Footer from "./Footer.js";
 import mail from "../icons/email.svg";
 import face from "../icons/face.svg";
 import idea from "../icons/idea.svg";
 import top2 from "../icons/top2.svg";
 import "../styles/Landing.css";
-import tree from "../tree.png";
-import avi from "../avi.jpg";
+import tree from "../images/tree.png";
+import avi from "../images/avi.jpg";
 
 export default class Landing extends Component {
   // constructor(props) {

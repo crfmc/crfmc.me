@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../styles/About.css";
 import face from "../icons/face.svg";
-import tree from "../tree.png";
-import sun from "../cornell_sun.jpg";
+import tree from "../images/tree.png";
+import sun from "../images/cornell_sun.jpg";
 
 export default class About extends Component {
   render() {

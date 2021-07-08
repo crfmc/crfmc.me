@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/Footer.css";
-import avi from "../avi.jpg";
-import Contact from "../components/Contact";
+import avi from "../images/avi.jpg";
+import Contact from "./Contact";
 import email from "../icons/email.svg";
 import github from "../icons/github.png";
 import instagram from "../icons/instagram.svg";
