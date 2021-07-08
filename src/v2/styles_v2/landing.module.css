@@ -1,8 +1,9 @@
 .full_container {
   margin: 0;
-  height: 100vh;
-  /* padding: 2%; */
-  /* background-color: #fef9ef; */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
   background: #56ccf2; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,

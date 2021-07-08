@@ -10,13 +10,13 @@ function Navigation
     <div className={styles.navigation_container}>
       <NavLink
         title="About"
-        href="#about"
+        href="#screen1"
         subtext="Who am I?"
         call="get to know me"
       />
       <NavLink
         title="Work"
-        href="#work"
+        href="#screen2"
         subtext="See what I've been working on"
         call="check out my work"
       />
