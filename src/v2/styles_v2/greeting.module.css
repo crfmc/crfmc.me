@@ -1,22 +1,64 @@
 .greeting_container {
+  margin-top: 5vh;
   padding: 5%;
+  padding-left: 10%;
 }
 
 .hello {
-  font-size: 250%;
-  color: rgb(241, 240, 240);
+  font-size: 300%;
+  font-weight: 300;
+  color: #46bbfc;
   margin: 0;
   padding: none;
+  animation: fadein 1s, flowin 0.5s;
 }
 
 .name {
   color: white;
-  font-size: 400%;
+  font-size: 500%;
   margin: 0;
   padding: none;
+  color: #053742;
+  animation: fadein 3s, flowin 0.75s;
 }
 
 .subtitle {
-  font-size: 200%;
-  color: rgb(241, 240, 240);
+  font-size: 400%;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a3dafa;
+  margin: 0;
+  animation: flowin 1s, fadein 2s;
+}
+
+.sidelinks_container {
+  position: fixed;
+  z-index: 2;
+  width: 20%;
+  height: 10vh;
+  margin: 35vh auto 0 80vw;
+}
+
+@keyframes flowin {
+  0% {
+    transform: translate(0px, 50px);
+    /* opacity: 0; */
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    /* opacity: 1; */
+  }
+}
+
+@keyframes fadein {
+  0% {
+    /* transform: translate(0px, 50px); */
+    opacity: 0;
+  }
+
+  100% {
+    /* transform: translate(0px, 0px); */
+    opacity: 1;
+  }
 }

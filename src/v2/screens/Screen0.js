@@ -1,14 +1,14 @@
 import React from 'react'
+import TopNav from '../TopNav'
 import Greeting from '../Greeting'
 import Navigation from '../Navigation'
-import Logo from '../Logo'
 import * as styles from '../styles_v2/screen0.module.css'
 
 
 function Screen0() {
   return (
     <div id="screen0" className={styles.full_container}>
-      <Logo />
+      <TopNav />
       <Greeting />
       <Navigation />
     </div>

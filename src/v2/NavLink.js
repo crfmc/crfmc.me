@@ -4,17 +4,19 @@ import * as styles from './styles_v2/navlink.module.css'
 export default function NavLink(props)
 {
   return (
+    <a
+      className={styles.container_anchor}
+      href={props.href}
+      target={props.target}
+      rel={props.rel}
+    >
     <div className={styles.navlink_container}>
-      <h2 className={styles.title}>{props.title}</h2>
-      <h4 className={styles.subtext}>{props.subtext}</h4>
-      <a
-        href={props.href}
-        className={styles.call_button}
-        target={props.target}
-        rel={props.rel}
-      >
-        {props.call}
-      </a>
-    </div>
+      <div className={styles.navlink_header}>
+        <img src={props.icon} alt={props.icon_alt} />
+        <h2 className={styles.title}>{props.title}</h2>
+      </div>
+      <p className={styles.subtext}>{props.subtext}</p>
+      </div>
+    </a>
   );
 }

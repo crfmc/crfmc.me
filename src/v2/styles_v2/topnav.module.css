@@ -1,0 +1,14 @@
+.container {
+  position: fixed;
+  width: 100%;
+  background-color: #e8eff1;
+  height: 10vh;
+  margin: none;
+  top: 0;
+  transition-timing-function: ease-in;
+  transition: 1s;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,8 +1,6 @@
 .navigation_container {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  /* margin-right: 10%; */
-  float: right;
-  background-color: black;
+  width: 70%;
+  margin-left: 8%;
 }

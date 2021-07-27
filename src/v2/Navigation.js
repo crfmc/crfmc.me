@@ -1,7 +1,11 @@
 import React from 'react'
 import * as styles from './styles_v2/navigation.module.css'
-
 import NavLink from './NavLink'
+
+// Importing icons for navigation links
+import face from './images/navlink_logos/face.svg'
+import bulb from './images/navlink_logos/bulb.svg'
+import resume from './images/navlink_logos/resume.svg'
 
 function Navigation
 ()
@@ -9,18 +13,24 @@ function Navigation
   return (
     <div className={styles.navigation_container}>
       <NavLink
+        icon={face}
+        icon_alt="Minimalist face logo"
         title="About"
         href="#screen1"
-        subtext="Who am I?"
+        subtext="Learn about who I am and what I do."
         call="get to know me"
       />
       <NavLink
-        title="Work"
+        icon={bulb}
+        icon_alt="Minimalist bulb logo"
+        title="Projects"
         href="#screen2"
-        subtext="See what I've been working on"
+        subtext="Check out some of the cool work I’ve been doing alone or in teams."
         call="check out my work"
       />
       <NavLink
+        icon={resume}
+        icon_alt="Minimalist sheet of paper logo"
         title="Resume"
         href="/crfmc_resume.pdf"
         target="_blank"
