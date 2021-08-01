@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: white;
   z-index: 1;
+  overflow-x: hidden;
 
   /* Chrome 10-25, Safari 5.1-6 */
   /* background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2); */

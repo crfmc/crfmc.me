@@ -1,4 +1,94 @@
 .project_container {
   display: flex;
-  display: block;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 100%;
+  background-color: #053742c7;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.project_img_container {
+  flex-grow: 1;
+  width: 70%;
+  height: 70%;
+  margin: auto 5%;
+  background-image: url("../images/gifs/coviz.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: fadein 1s;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.project_name {
+  font-size: 200%;
+  font-weight: 800;
+  width: 100%;
+  margin: 0;
+  color: white;
+  border-radius: 20px;
+  animation: inleft 1s;
+  animation-timing-function: ease-out;
+}
+
+.project_details {
+  width: 25%;
+  margin: 5% 0 5% 5%;
+}
+
+.detail_header {
+  font-size: 150%;
+  color: #a3dafa;
+  margin: 10% 0 0 0;
+}
+
+.members {
+  animation: fadein 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+  color: white;
+}
+
+.languages {
+  animation: fadein 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  color: white;
+}
+
+.frameworks {
+  animation: fadein 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  color: white;
+}
+
+.project_container_overlay h4 {
+  color: white;
+  margin: 0;
+}
+
+@keyframes inleft {
+  from {
+    transform: translate(0px, 500px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(0px, 200px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
 }

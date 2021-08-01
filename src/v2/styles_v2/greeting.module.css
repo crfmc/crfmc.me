@@ -34,8 +34,8 @@
 .sidelinks_container {
   position: fixed;
   z-index: 2;
-  width: 20%;
-  height: 10vh;
+  width: 60%;
+  height: 50vh;
   margin: 35vh auto 0 80vw;
 }
 

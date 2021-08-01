@@ -1,0 +1,18 @@
+.header_container {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section_name {
+  font-size: 120%;
+  font-weight: 300;
+  color: #a3dafa;
+}
+
+.line {
+  transform: translate(0px, 10px);
+  stroke: #a3dafa;
+  stroke-width: 1%;
+}
