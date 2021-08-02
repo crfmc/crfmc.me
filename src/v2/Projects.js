@@ -3,32 +3,31 @@ import * as styles from "./styles_v2/projects.module.css"
 import SectionHeader from './SectionHeader'
 import Project from './Project';
 
+// Importing project previews
+import coviz from "./images/gifs/coviz.gif"
+import fileovr from "./images/gifs/fileovr.gif"
+
 function Projects() {
   return (
     <div className={styles.full_container}>
       <SectionHeader section_name="Projects" />
       <div className={styles.projects_container}>
+        <Project 
+          name="Fileovr"
+          preview={fileovr}
+          members="1"
+          languages={["JavaScript"]}
+          frameworks={["React", "Framer-motion"]}
+          github="https://github.com/crfmc/fileovr"
+        />
         <Project
-          name="Project 1 Name"
+          name="Coviz"
+          preview={coviz}
           members="3"
-          languages= {["JavaScript", "Python"]}
-          frameworks="Flask"
+          languages={["JavaScript"]}
+          frameworks={["D3.js"]}
+          github="https://github.com/crfmc/coviz"
         />
-        {/* <Project 
-          name="Project 2"
-        />
-        <Project 
-          name="Project 3"
-        />
-        <Project 
-          name="Project 4"
-        />
-        <Project 
-          name="Project 5"
-        />
-        <Project 
-          name="Project 6"
-        /> */}
       </div>
     </div>
   )

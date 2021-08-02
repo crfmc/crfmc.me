@@ -4,7 +4,7 @@ import React from 'react'
 import Screen0 from './screens/Screen0'
 import Screen1 from './screens/Screen1'
 import Screen2 from './screens/Screen2'
-import SideLinks from './SideLinks'
+import Screen3 from './screens/screen3'
 
 // import Styles
 import * as styles from './styles_v2/landing.module.css'
@@ -18,6 +18,7 @@ export default function Landing()
         <Screen0 />
         <Screen1 />
         <Screen2 />
+        <Screen3 />
       </div>
     </>
   );
