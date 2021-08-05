@@ -6,6 +6,8 @@ import Project from './Project';
 // Importing project previews
 import coviz from "./images/gifs/coviz.gif"
 import fileovr from "./images/gifs/fileovr.gif"
+import hike from './images/gifs/tah.gif'
+import poker from './images/gifs/poker.gif'
 
 function Projects() {
   return (
@@ -27,6 +29,22 @@ function Projects() {
           languages={["JavaScript"]}
           frameworks={["D3.js"]}
           github="https://github.com/crfmc/coviz"
+        />
+        <Project
+          name="Poker"
+          preview={poker}
+          members="3"
+          languages={["OCaml"]}
+          frameworks={["OUnit2"]}
+          github="https://github.com/crfmc/poker"
+        />
+        <Project
+          name="Take a Hike"
+          preview={hike}
+          members="5"
+          languages={["Python"]}
+          frameworks={["Flask"]}
+          github="https://github.com/aliciaxw/cs4300sp2021-axw5-ac2596-crf85-rch294-rrr225"
         />
       </div>
     </div>

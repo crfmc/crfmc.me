@@ -1,6 +1,7 @@
 import React from 'react'
 import * as styles from './styles_v2/about.module.css'
 import SectionHeader from './SectionHeader'
+import FadeInSection from './FadeInSection'
 
 // Import images
 import tree from './images/tree.png'
@@ -13,58 +14,99 @@ export default function About() {
 
   return (
     <div className={styles.full_container}>
-      <SectionHeader section_name="About" />
+      <FadeInSection from_left={true}>
+        <SectionHeader section_name="About" />
+      </FadeInSection>
 
-      {/* 2017 */}
-      <div className={styles.content_container}>
-        <h1 className={styles.year}>2017</h1>
         <div className={styles.subcontainer}>
           <div className={styles.subcontainer_text}>
-            <h2>Hello! My name is Cesar. My passion is developing websites.</h2>
-            <p>
-              I began building websites during my Sophomore year at <b>Cornell University</b> when I decided to explore the
-              world of the web. I took an introductory course on programming for the web, and created my first site.
-            </p>
+            <FadeInSection>
+              <h1 className={styles.subcontainer_header}>I began building websites in school.</h1>
+            </FadeInSection>
+            <FadeInSection>
+              <p className={styles.subcontainer_subtext}>
+                I took my first course on programming for the web during my studies at <b>Cornell University</b>.
+              </p>
+          </FadeInSection>
+          <FadeInSection>
+              <p className={styles.subcontainer_subtext}>
+                I learned the basic structures of websites and a <b>user-centered</b> approach for
+                designing them.
+              </p>
+            </FadeInSection>
+            <FadeInSection>
+              <p className={styles.subcontainer_subtext}>
+              I fell in love with JavaScript right away. I was inspired by the power it gave me
+              in building user interfaces.
+              </p>
+            </FadeInSection>
           </div>
+          
+        <div className={styles.subcontainer_img}>
+          <FadeInSection>
+            <img
+              src={tree}
+              alt="a tree on Cornell's campus"
+              className={styles.about_img}
+            />
+          </FadeInSection>
+        </div>
+      </div>
+      
+      <div className={styles.subcontainer}>
+        <div className={styles.subcontainer_img}>
+          <FadeInSection>
+            <img
+              src={sun}
+              alt="Image of Cornell Daily Sun's headquarters"
+              className={styles.about_img}
+            />
+          </FadeInSection>
+        </div>
+        <div className={styles.subcontainer_text}>
+          <FadeInSection>
+            <h1 className={styles.subcontainer_header}>
+              I joined a team of developers.
+            </h1>
+          </FadeInSection>
 
-          <img
-            src={tree}
-            alt="a tree on Cornell's campus"
-            className={styles.about_img}
-          />
+
+          <FadeInSection>
+            <p className={styles.subcontainer_subtext}>
+              A year later I had the privilege of working on the <a href="https://cornellsun.com/"><b>Cornell Daily Sun's Web Team</b></a> where I
+              helped design and implement experimental web pages like <a href={spotlights}><b>this one</b></a>
+              , <a href={covid}><b>this one</b></a>, and <a href={nys23}><b>this one</b></a>.
+            </p>
+          </FadeInSection>
+          <FadeInSection>
+            <p className={styles.subcontainer_subtext}>
+              I gained experience using some of the most widely used JavaScript Frameworks, <b>React</b> and <b>D3.js</b>.
+            </p>
+          </FadeInSection>
+          <FadeInSection>
+            <p className={styles.subcontainer_subtext}>
+              I also learned about agile methodologies like <b>SCRUM</b> and <b>Kanban</b>.
+            </p>
+          </FadeInSection>
+           
         </div>
       </div>
 
-        {/* 2019 Cornell Sun */}
-        <div className={styles.content_container}>
-          <div className={styles.subcontainer}>
-            <img src={sun} alt="Image of Cornell Daily Sun's headquarters" />
-            <div className={styles.subcontainer_text}>
+      <div className={styles.subcontainer}>
+        <div className={styles.subcontainer_text}>
+          <FadeInSection>
+            <div className={styles.transition_subtext}>
               <p>
-                A year later I had the privilege of working on the <b>Cornell Daily Sun's Web Team</b> where I
-                helped design and implement experimental web pages like <a href={spotlights}>this one</a>
-                , <a href={covid}>this one</a>, <a href={nys23}>and this one</a>.
-              </p>
-              <p>
-                I learned the most about agile methodologies like SCRUM and Kanban here. It is also where I gained 
-                experience using some of the most widely used JavaScript Frameworks, <b>React</b> and <b>D3.js</b>.
+                With the help of these tools and a knowledge of the fundamentals,
+                I've been able to create exciting new projects of my own.
               </p>
             </div>
-          </div>
+          </FadeInSection>
+          <FadeInSection>
+            <p className={styles.transition_cta}> Scroll down to see some of my most recent projects.</p>
+          </FadeInSection>
         </div>
-
-      {/* Projects Transition */}
-        <div className={styles.content_container}>
-          <div className={styles.subcontainer}>
-            <div className={styles.subcontainer_text}>
-              <p>
-                With the help of these tools and several others, I've been able to create cool and exciting projects with people
-                who are interested in similar things.
-              </p>
-              <p><b>Scroll to check some out!</b></p>
-            </div>
-          </div>
-        </div>
-    </div>
+      </div>
+      </div>
   )
 }

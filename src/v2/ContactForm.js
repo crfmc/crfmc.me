@@ -21,7 +21,6 @@ const validationSchema = Yup.object().shape({
 
 export default class ContactForm extends Component {
 
-
   render() {
     return (
       <div>
@@ -38,34 +37,39 @@ export default class ContactForm extends Component {
         >
           {({ errors, touched }) => (
             
-            <Form>
-              <Field name="firstName"></Field>
-              {errors.firstName && touched.firstName ?
-                <div className={styles.error}>
-                  {errors.firstName}
-                </div>
-                : null
-              }
-              <Field name="lastName"></Field>
-              {errors.lastName && touched.lastName ?
-                <div className={styles.error}>
-                  {errors.lastName}
-                </div>
-                : null
-              }
-              <Field name="email" type="email"></Field>
-              {errors.email && touched.email ?
-                <div className={styles.error}>
-                  {errors.email}
-                </div>
-                : null
-              }
-              <button type="submit">Submit</button>
+            <Form className={styles.form_container}>
+
+              <div className={styles.label_input_container}>
+                <label htmlFor="firstname">first name</label>
+                <Field className={styles.input_field} name="firstName"></Field>
+                {errors.firstName && touched.firstName ?
+                  <div className={styles.error}>
+                    {errors.firstName}
+                  </div>
+                  : null }
+              </div>
+              <div className={styles.label_input_container}>
+                <label htmlFor="lastname">last name</label>
+                <Field className={styles.input_field} name="lastName"></Field>
+                {errors.lastName && touched.lastName ?
+                  <div className={styles.error}>
+                    {errors.lastName}
+                  </div>
+                  : null }
+              </div>
+              <div className={styles.label_input_container}>
+                <label htmlFor="email">email</label>
+                <Field className={styles.input_field} name="email" type="email"></Field>
+                {errors.email && touched.email ?
+                  <div className={styles.error}>
+                    {errors.email}
+                  </div>
+                  : null }
+              </div>
+              <button className={styles.button} type="submit">submit</button>
             </Form>
-          
+
           )}
-          
-            
 
         </Formik>
       </div>

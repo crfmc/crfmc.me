@@ -12,10 +12,10 @@ export default function projlinks(props) {
     return (
       <div className={styles.container}>
         <a href={props.github_link}>
-          <img src={github} alt="gtihub logo (link to source code)" />
+          <img className={styles.github_link} src={github} alt="gtihub logo (link to source code)" />
         </a>
         <a href={props.pagelink}>
-          <img src={openlink} alt="open link logo (link to project)" />
+          <img className={styles.openlink} src={openlink} alt="open link logo (link to project)" />
         </a>
       </div>
   )
@@ -23,7 +23,7 @@ export default function projlinks(props) {
     return (
       <div className={`${styles.container} ${styles.github_only}`}>
         <a href={props.github_link}>
-          <img src={github} alt="gtihub logo (link to source code)" />
+          <img className={styles.github_link} src={github} alt="gtihub logo (link to source code)" />
         </a>
       </div>
     )

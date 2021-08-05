@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Projlinks from './Projlinks'
+import FadeInSection from './FadeInSection';
+
 import * as styles from "./styles_v2/project.module.css"
 
 export default function Project(props) {
@@ -14,7 +16,6 @@ export default function Project(props) {
   
   return (
     <div className={styles.project_container}>
-
       <div
         style={{
         flexGrow: "1",
@@ -32,23 +33,30 @@ export default function Project(props) {
       ></div>
 
       <div className={styles.project_details}>
-        <h1 className={styles.project_name}>{props.name}</h1>
-        <div className={styles.members}>
-          <h4 className={styles.detail_header}>Members</h4>
-          <h4 className={styles.detail}>{props.members}</h4>
-        </div>
-        <div className={styles.languages}>
-          <h4 className={styles.detail_header}>Languages</h4>
-          {langlist}
-        </div>
-        <div className={styles.frameworks}>
-          <h4 className={styles.detail_header}>Frameworks</h4>
-          {frameworklist}
-        </div>
+        <FadeInSection>
+          <h1 className={styles.project_name}>{props.name}</h1>
+        </FadeInSection>
+        <FadeInSection>
+          <div className={styles.members}>
+            <h4 className={styles.detail_header}>Members</h4>
+            <h4 className={styles.detail}>{props.members}</h4>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className={styles.languages}>
+            <h4 className={styles.detail_header}>Languages</h4>
+            {langlist}
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className={styles.frameworks}>
+            <h4 className={styles.detail_header}>Frameworks</h4>
+            {frameworklist}
+          </div>
+        </FadeInSection>
         <div className={styles.projlinks_container}>
           <Projlinks
             github={props.github}
-            pagelink={props.pagelink}
           />
         </div>
       </div>
