@@ -10,8 +10,8 @@ export default function Project(props) {
       <h4 className={styles.detail} key={key}>{lang}</h4>
   );
   
-  const frameworklist = props.frameworks.map((framework, key) =>
-      <h4 className={styles.detail} key={key}>{framework}</h4>
+  const librarylist = props.libraries.map((lib, key) =>
+      <h4 className={styles.detail} key={key}>{lib}</h4>
   );
   
   return (
@@ -49,9 +49,9 @@ export default function Project(props) {
           </div>
         </FadeInSection>
         <FadeInSection>
-          <div className={styles.frameworks}>
-            <h4 className={styles.detail_header}>Frameworks</h4>
-            {frameworklist}
+          <div className={styles.libraries}>
+            <h4 className={styles.detail_header}>Libraries</h4>
+            {librarylist}
           </div>
         </FadeInSection>
         <div className={styles.projlinks_container}>

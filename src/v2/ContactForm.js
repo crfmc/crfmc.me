@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form, Field, useField } from 'formik'
 import * as Yup from 'yup'
 
 import * as styles from "./styles_v2/form.module.css"
@@ -14,10 +14,52 @@ const validationSchema = Yup.object().shape({
   lastName: Yup.string()
     .min(2, 'Last name too short.')
     .max(20, 'Last name too long.')
-    .required('Last name is required'),
-  email: Yup.string().email('Invalid email address.').required('A valid email address is required.')
+    .required('Last name is required.'),
+  email: Yup.string().email('Invalid email address.').required('Valid email address is required.'),
+  subject: Yup.string()
+    .min(5, 'Subject too short.')
+    .max(40, 'Subject too long.')
+    .required('A message subject is is required.'),
+  message: Yup.string().min(10, 'Message too short.').max(200, 'Message too long.').required('Message is required.')
 
 });
+
+const MyTextField = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+
+  return (
+    <div className={styles.label_input_container}>
+      <label>
+        {label}
+        <input className={styles.input_field} {...field} {...props} />
+      </label>
+      {meta.touched && meta.error ? (
+        <div className={styles.error}>{meta.error}</div>
+      ) : null
+      }
+    </div>
+  );
+};
+
+
+const MyTextArea = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+
+  return (
+    <div className={styles.label_input_container}>
+      <label>
+        {label}
+        <textarea className={styles.message_field} {...field} {...props}></textarea>
+      </label>
+      {meta.touched && meta.error ? (
+        <div className={styles.error}>{meta.error}</div>
+      ) : null
+      }
+    </div>
+  );
+};
+
+
 
 export default class ContactForm extends Component {
 
@@ -28,7 +70,9 @@ export default class ContactForm extends Component {
           initialValues={{
             firstName: "",
             lastName: "",
-            email: ""
+            email: "",
+            subject: "",
+            message: ""
           }}
           validationSchema={validationSchema}
           onSubmit={
@@ -39,34 +83,16 @@ export default class ContactForm extends Component {
             
             <Form className={styles.form_container}>
 
-              <div className={styles.label_input_container}>
-                <label htmlFor="firstname">first name</label>
-                <Field className={styles.input_field} name="firstName"></Field>
-                {errors.firstName && touched.firstName ?
-                  <div className={styles.error}>
-                    {errors.firstName}
-                  </div>
-                  : null }
-              </div>
-              <div className={styles.label_input_container}>
-                <label htmlFor="lastname">last name</label>
-                <Field className={styles.input_field} name="lastName"></Field>
-                {errors.lastName && touched.lastName ?
-                  <div className={styles.error}>
-                    {errors.lastName}
-                  </div>
-                  : null }
-              </div>
-              <div className={styles.label_input_container}>
-                <label htmlFor="email">email</label>
-                <Field className={styles.input_field} name="email" type="email"></Field>
-                {errors.email && touched.email ?
-                  <div className={styles.error}>
-                    {errors.email}
-                  </div>
-                  : null }
-              </div>
-              <button className={styles.button} type="submit">submit</button>
+              <MyTextField name="firstName" type="text" label="First Name" />
+              <MyTextField name="lastName" type="text" label="Last Name" />
+              <MyTextField name="email" type="email" label="Email" />
+              <MyTextField name="subject" type="text" label="Subject" />
+              <MyTextArea name="message" type="text" label="Message"  maxLength="200"/>
+              <button
+                className={styles.submit_button}
+                type="submit">
+                Submit
+              </button>
             </Form>
 
           )}

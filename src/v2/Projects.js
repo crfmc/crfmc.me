@@ -19,7 +19,7 @@ function Projects() {
           preview={fileovr}
           members="1"
           languages={["JavaScript"]}
-          frameworks={["React", "Framer-motion"]}
+          libraries={["React", "Framer-motion"]}
           github="https://github.com/crfmc/fileovr"
         />
         <Project
@@ -27,7 +27,7 @@ function Projects() {
           preview={coviz}
           members="3"
           languages={["JavaScript"]}
-          frameworks={["D3.js"]}
+          libraries={["D3.js"]}
           github="https://github.com/crfmc/coviz"
         />
         <Project
@@ -35,7 +35,7 @@ function Projects() {
           preview={poker}
           members="3"
           languages={["OCaml"]}
-          frameworks={["OUnit2"]}
+          libraries={["OUnit2"]}
           github="https://github.com/crfmc/poker"
         />
         <Project
@@ -43,7 +43,7 @@ function Projects() {
           preview={hike}
           members="5"
           languages={["Python"]}
-          frameworks={["Flask"]}
+          libraries={["Flask"]}
           github="https://github.com/aliciaxw/cs4300sp2021-axw5-ac2596-crf85-rch294-rrr225"
         />
       </div>

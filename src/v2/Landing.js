@@ -12,6 +12,8 @@ import Screen4 from './screens/Screen4'
 // import Styles
 import * as styles from './styles_v2/landing.module.css'
 
+console.log(window.innerWidth);
+
 export default function Landing()
 {
   return (

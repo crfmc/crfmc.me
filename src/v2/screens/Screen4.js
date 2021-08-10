@@ -6,7 +6,8 @@ import Footer from '../Footer'
 export default function Screen4() {
   return (
     <div className={styles.full_container}>
-      <Footer />
+      {/* <Footer /> */}
+      <p>Copyright © All Rights Reserved by Cesar Ferreyra-Mansilla</p>
     </div>
   )
 }

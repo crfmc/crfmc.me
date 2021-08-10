@@ -33,3 +33,24 @@
     opacity: 1;
   }
 }
+
+/* <1050px screen width */
+@media (max-width: 1050px) {
+  .container {
+    width: 30%;
+  }
+}
+
+/* <850px screen width */
+@media (max-width: 850px) {
+  .container {
+    width: 40%;
+  }
+}
+
+/* <550px screen width */
+@media (max-width: 850px) {
+  .container {
+    width: 60%;
+  }
+}

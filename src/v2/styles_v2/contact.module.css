@@ -13,19 +13,26 @@
   background-color: #a3dafac7;
 }
 
-.header {
-  font-size: 250%;
+.contact_text {
+  width: 80%;
+  margin: 10% auto;
   color: #053742;
 }
 
-.contact_text {
-  width: 80%;
-  margin: auto;
-  color: #053742;
+.header {
+  font-size: 350%;
+  color: white;
 }
 
 .text {
-  font-size: 120%;
+  margin: 10% auto;
+  line-height: 150%;
+  font-weight: 300;
+  font-size: 150%;
+}
+
+.text b {
+  text-decoration: underline;
 }
 
 .contact_right {

@@ -25,7 +25,7 @@ function Navigation
         icon_alt="Minimalist bulb logo"
         title="Projects"
         href="#screen2"
-        subtext="Check out some of the cool work I’ve been doing alone or in teams."
+        subtext="Check out some of my recent projects."
         call="check out my work"
       />
       <NavLink

@@ -27,7 +27,7 @@ export default function Contact() {
           </FadeInSection>
           <FadeInSection>
             <p className={styles.text}>
-              Otherwise, I am happy to talk about <b>all things web development</b>, <b>all things soccer</b>, and <b>most things sewing</b>.
+              Otherwise, I am happy to talk about all things web development.
             </p>
           </FadeInSection>
         </div>
