@@ -12,17 +12,16 @@ import Screen4 from './screens/Screen4'
 // import Styles
 import * as styles from './styles_v2/landing.module.css'
 
-console.log(window.innerWidth);
-
 export default function Landing()
 {
+  const isSmallScreen = window.innerWidth < 850;
   return (
     <>
       <div className={styles.full_container}>
         {/* Render screens in order */}
-        <Screen0 />
+        <Screen0 isSmallScreen={ isSmallScreen }/>
         <Screen1 />
-        <Screen2 />
+        <Screen2 isSmallScreen={ isSmallScreen }/>
         <Screen3 />
         <Screen4 />
       </div>

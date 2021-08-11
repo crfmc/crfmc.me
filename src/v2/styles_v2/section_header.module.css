@@ -16,3 +16,21 @@
   stroke: #a3dafa;
   stroke-width: 1%;
 }
+
+.section_name_white {
+  font-size: 120%;
+  font-weight: 300;
+  color: white;
+}
+
+.line_white {
+  transform: translate(0px, 10px);
+  stroke: white;
+  stroke-width: 1%;
+}
+
+@media (max-width: 850px) {
+  .header_container {
+    margin-top: 10vh;
+  }
+}

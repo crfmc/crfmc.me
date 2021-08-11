@@ -9,7 +9,7 @@ import fileovr from "./images/gifs/fileovr.gif"
 import hike from './images/gifs/tah.gif'
 import poker from './images/gifs/poker.gif'
 
-function Projects() {
+function Projects(props) {
   return (
     <div className={styles.full_container}>
       <SectionHeader section_name="Projects" />
@@ -21,6 +21,7 @@ function Projects() {
           languages={["JavaScript"]}
           libraries={["React", "Framer-motion"]}
           github="https://github.com/crfmc/fileovr"
+          isSmall={props.isSmallScreen}
         />
         <Project
           name="Coviz"
@@ -29,6 +30,7 @@ function Projects() {
           languages={["JavaScript"]}
           libraries={["D3.js"]}
           github="https://github.com/crfmc/coviz"
+          isSmall={props.isSmallScreen}
         />
         <Project
           name="Poker"
@@ -37,6 +39,7 @@ function Projects() {
           languages={["OCaml"]}
           libraries={["OUnit2"]}
           github="https://github.com/crfmc/poker"
+          isSmall={props.isSmallScreen}
         />
         <Project
           name="Take a Hike"
@@ -45,6 +48,7 @@ function Projects() {
           languages={["Python"]}
           libraries={["Flask"]}
           github="https://github.com/aliciaxw/cs4300sp2021-axw5-ac2596-crf85-rch294-rrr225"
+          isSmall={props.isSmallScreen}
         />
       </div>
     </div>

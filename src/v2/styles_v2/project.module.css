@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: row-reverse;
   margin: 5% 0;
-  height: 100%;
+  padding: 5% 0;
+  height: 60vh;
   width: 100%;
   background-color: white;
   border: 4px solid #053742;
@@ -13,10 +14,6 @@
 .fadein_image {
   width: 100%;
   height: 100%;
-}
-
-.project_image_container {
-  width: 100%;
 }
 
 .project_name {
@@ -31,8 +28,13 @@
 
 .project_details {
   width: 20%;
-  margin: 5% 0 5% 5%;
+  margin: 5% 0 0 5%;
   text-align: center;
+}
+
+.project_detail {
+  width: 100%;
+  height: 100%;
 }
 
 .detail_header {
@@ -58,4 +60,43 @@
 
 .libraries {
   color: white;
+}
+
+@media (max-width: 850px) {
+  .project_container {
+    flex-direction: column;
+  }
+
+  .project_img_container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project_name {
+    font-size: 100%;
+    text-align: center;
+    margin: 2% auto;
+    text-decoration: none;
+  }
+
+  .project_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 20%;
+    margin: 2% 5% 0 5%;
+  }
+
+  .project_detail {
+    margin: 0 0;
+  }
+
+  .detail_header {
+    font-size: 100%;
+  }
+
+  .detail {
+    font-size: 80%;
+  }
 }

@@ -14,10 +14,9 @@
   flex-grow: 1;
   justify-content: space-between;
   background-color: #e8eff1;
-  /* box-shadow: 0px 1px 10px 1px #053742; */
   border: 1px solid black;
   border-radius: 5px;
-  animation: slidein 4s;
+  animation: slidein 3s;
   animation-timing-function: ease-out;
   text-align: center;
 }
@@ -63,6 +62,17 @@
   margin: 5% auto;
 }
 
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translate(0px, 400px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
 /* <1040px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 1040px) {
   .navlink_container {
@@ -76,6 +86,16 @@
 
   .subtext {
     font-size: 90%;
+  }
+}
+
+@media (max-width: 1040px) and (max-height: 2000px) {
+  .navlink_container {
+    /* height: 10vh; */
+  }
+
+  .subtext {
+    margin: 5% auto auto auto;
   }
 }
 

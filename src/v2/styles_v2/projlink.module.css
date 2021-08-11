@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  margin: 50% auto auto auto;
+  margin: 20% auto 5% auto;
   max-width: 50%;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.527);
@@ -42,5 +42,22 @@
   }
   on {
     opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    margin: 2% auto;
+    width: 10%;
+  }
+
+  .container a {
+    display: flex;
+    margin: auto;
+  }
+
+  .container img {
+    margin: auto;
   }
 }

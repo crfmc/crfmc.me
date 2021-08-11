@@ -7,9 +7,7 @@ import face from './images/navlink_logos/face.svg'
 import bulb from './images/navlink_logos/bulb.svg'
 import resume from './images/navlink_logos/resume.svg'
 
-function Navigation
-()
-{
+export default function Navigation(){
   return (
     <div className={styles.navigation_container}>
       <NavLink
@@ -19,6 +17,7 @@ function Navigation
         href="#screen1"
         subtext="Learn about who I am and what I do."
         call="get to know me"
+        animation_delay={0}
       />
       <NavLink
         icon={bulb}
@@ -27,6 +26,7 @@ function Navigation
         href="#screen2"
         subtext="Check out some of my recent projects."
         call="check out my work"
+        animation_delay={0.5}
       />
       <NavLink
         icon={resume}
@@ -37,9 +37,8 @@ function Navigation
         rel="noopener noreferrer"
         subtext="A one-page summary of my experiences."
         call="Open my resume"
+        animation_delay={1}
       />
     </div>
   )
 }
-
-export default Navigation

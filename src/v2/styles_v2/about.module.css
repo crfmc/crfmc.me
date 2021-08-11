@@ -94,3 +94,36 @@
   font-weight: 300;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .subcontainer {
+    flex-direction: column-reverse;
+  }
+
+  .subcontainer_img {
+    width: 60%;
+    margin: 2% auto;
+  }
+  .subcontainer_subtext {
+    margin: 8% 2%;
+  }
+}
+
+@media (max-width: 400px) {
+  .subcontainer {
+    flex-direction: column-reverse;
+  }
+
+  .subcontainer_img {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  .subcontainer_header {
+    font-size: 200%;
+  }
+
+  .subcontainer_subtext {
+    font-size: 100%;
+  }
+}

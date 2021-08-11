@@ -13,3 +13,13 @@
   width: 80%;
   height: 80%;
 }
+
+@media (max-width: 850px) {
+  .full_container {
+    height: 100%;
+  }
+  .projects_container {
+    width: 90%;
+    margin: 10% 5%;
+  }
+}

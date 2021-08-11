@@ -1,5 +1,6 @@
 import React from 'react'
 
+import SectionHeader from './SectionHeader'
 import ContactForm from "./ContactForm"
 import FadeInSection from './FadeInSection'
 
@@ -9,6 +10,9 @@ export default function Contact() {
   return (
     <div className={styles.contact_container}>
       <div className={styles.contact_left}>
+        <FadeInSection>
+          <SectionHeader section_name="Contact" isWhite="true" />
+        </FadeInSection>
         <div className={styles.contact_text}>
           <FadeInSection>
             <h1 className={styles.header}>
