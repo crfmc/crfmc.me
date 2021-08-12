@@ -1,0 +1,74 @@
+@media (max-height: 2000px) {
+  .full_container {
+    height: 300vh;
+  }
+}
+
+@media (max-height: 1200px) {
+  .full_container {
+    height: 300vh;
+  }
+}
+
+/* Stubborn iPad Pro */
+@media (max-height: 1400px) and (max-width: 1200px) {
+  .full_container {
+    height: 250vh;
+  }
+}
+
+@media (max-height: 1000px) {
+  .full_container {
+    height: 230vh;
+  }
+}
+
+/* For wider screens and laptops */
+@media (max-height: 1000px) and (max-width: 1500px) {
+  .full_container {
+    height: 300vh;
+  }
+}
+
+@media (max-height: 950px) and (max-width: 1500px) {
+  .full_container {
+    height: 320vh;
+  }
+}
+
+@media (max-height: 850px) and (max-width: 1500px) {
+  .full_container {
+    height: 350vh;
+  }
+}
+
+@media (max-height: 800px) and (max-width: 1500px) {
+  .full_container {
+    height: 370vh;
+  }
+}
+
+@media (max-height: 750px) and (max-width: 1500px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 1500px) {
+  .full_container {
+    height: 420vh;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 1500px) {
+  .full_container {
+    height: 450vh;
+  }
+}
+
+/* For thinner screens */
+@media (max-height: 1000px) and (max-width: 900px) {
+  .full_container {
+    height: 280vh;
+  }
+}

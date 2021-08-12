@@ -1,0 +1,129 @@
+.full_container {
+  background-color: white;
+  padding: 1vh 1vw;
+  height: 100%;
+  align-items: center;
+}
+
+.year {
+  font-size: 400%;
+  font-weight: 800;
+  color: #a3dafa;
+}
+
+.about_img {
+  width: 100%;
+  margin: 2%;
+  border: 1px solid #053742;
+  float: right;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 80%;
+  margin: 10% 5%;
+}
+
+.subcontainer_text {
+  margin: 0 2% 0 5%;
+  width: 100%;
+}
+
+.subcontainer_header {
+  color: #a3dafa;
+  font-size: 250%;
+  font-weight: 300;
+  margin: 0;
+}
+
+.subcontainer_subtext {
+  margin: 2% 0 2% 0;
+  color: #053742;
+  font-size: 120%;
+  font-weight: 300;
+}
+
+.subcontainer_img {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_img {
+  margin: auto;
+}
+
+/* 
+*  DISCLAIMER, I give full credit for the underline animations in the following lines to 
+*  a css-irl article found at (https://css-irl.info/animating-underlines/)
+*/
+
+.subcontainer_text a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to right, black, black),
+    linear-gradient(to right, #a3dafa, #a3dafa, white);
+  background-size: 100% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  transition: color 200ms;
+}
+
+.subcontainer a:hover,
+.subcontainer a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+  color: #a3dafa;
+}
+
+.transition_subtext {
+  color: #053742;
+  margin: 10% 0;
+  font-size: 150%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.transition_cta {
+  color: #a3dafa;
+  margin: 0;
+  font-size: 150%;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .subcontainer {
+    flex-direction: column-reverse;
+  }
+
+  .subcontainer_img {
+    width: 60%;
+    margin: 2% auto;
+  }
+  .subcontainer_subtext {
+    margin: 8% 2%;
+  }
+}
+
+@media (max-width: 400px) {
+  .subcontainer {
+    flex-direction: column-reverse;
+  }
+
+  .subcontainer_img {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  .subcontainer_header {
+    font-size: 200%;
+  }
+
+  .subcontainer_subtext {
+    font-size: 100%;
+  }
+}
