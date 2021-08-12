@@ -4,15 +4,16 @@
   }
 }
 
-@media (max-height: 2000px) and (min-width: 1000px) {
-  .full_container {
-    height: 200vh;
-  }
-}
-
 @media (max-height: 1200px) {
   .full_container {
     height: 300vh;
+  }
+}
+
+/* Stubborn iPad Pro */
+@media (max-height: 1400px) and (max-width: 1200px) {
+  .full_container {
+    height: 250vh;
   }
 }
 
@@ -22,44 +23,76 @@
   }
 }
 
-@media (max-height: 1000px) and (min-width: 1000px) {
-  .full_container {
-    height: 350vh;
-  }
-}
-
-@media (max-height: 950px) and (min-width: 1000px) {
+/* For wider screens and laptops */
+@media (max-height: 1000px) and (max-width: 1500px) {
   .full_container {
     height: 300vh;
   }
 }
 
-@media (max-height: 900px) and (min-width: 1000px) {
+@media (max-height: 950px) and (max-width: 1500px) {
   .full_container {
-    height: 360vh;
+    height: 320vh;
   }
 }
 
-@media (max-height: 850px) {
+@media (max-height: 850px) and (max-width: 1500px) {
   .full_container {
-    height: 250vh;
+    height: 350vh;
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (max-width: 1500px) {
+  .full_container {
+    height: 370vh;
+  }
+}
+
+@media (max-height: 750px) and (max-width: 1500px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 1500px) {
+  .full_container {
+    height: 420vh;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 1500px) {
+  .full_container {
+    height: 450vh;
+  }
+}
+
+/* For thinner screens */
+@media (max-height: 1000px) and (max-width: 900px) {
   .full_container {
     height: 280vh;
   }
 }
 
-@media (max-height: 800px) and (min-width: 1000px) {
+/* @media (max-height: 900px) and (min-width: 1000px) {
+  .full_container {
+    height: 360vh;
+  }
+} */
+
+/* @media (max-height: 800px) {
   .full_container {
     height: 350vh;
   }
-}
+} */
 
-@media (max-height: 700px) {
+/* @media (max-height: 700px) {
   .full_container {
-    height: 300vh;
+    height: 400vh;
   }
-}
+} */
+
+/* @media (max-height: 600px) and (min-width: 1000px) {
+  .full_container {
+    height: 400vh;
+  }
+} */
