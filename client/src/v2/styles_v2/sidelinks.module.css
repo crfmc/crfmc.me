@@ -10,6 +10,18 @@
   margin-left: 7%;
 }
 
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .container {
+      height: 100%;
+    }
+
+    .line {
+    }
+  }
+}
+
 @keyframes flowin {
   0% {
     transform: translate(0px, 400px);

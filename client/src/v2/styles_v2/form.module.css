@@ -66,3 +66,19 @@ label {
 .submit_button:hover {
   cursor: pointer;
 }
+
+.thanks_container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.thanks_container h1 {
+  margin: 30% auto 0 auto;
+  color: #053742;
+}
+
+.thanks_container h3 {
+  margin: 2% auto;
+  color: #053742;
+}

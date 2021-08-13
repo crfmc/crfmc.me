@@ -73,6 +73,21 @@
   }
 }
 
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .navlink_header img,
+    .navlink_header h2 {
+      height: 100%;
+      margin: auto 0;
+    }
+
+    .navlink_header img {
+      margin-right: 5%;
+    }
+  }
+}
+
 /* <1040px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 1040px) {
   .navlink_container {

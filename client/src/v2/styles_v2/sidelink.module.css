@@ -27,3 +27,12 @@ a {
 .hidden {
   display: none;
 }
+
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .icon_container img {
+      height: 100%;
+    }
+  }
+}

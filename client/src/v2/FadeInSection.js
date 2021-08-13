@@ -6,10 +6,6 @@ export default function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();
 
-  let options = {
-    threshold: 0.25
-  }
-
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -21,7 +17,9 @@ export default function FadeInSection(props) {
           observer.unobserve(domRef.current);
         }
       });
-    }, options);
+    }, {
+    threshold: 0.25
+  });
     
     observer.observe(domRef.current); // Observe the node
   }, []);

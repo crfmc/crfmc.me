@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   margin: 5% 0;
   padding: 5% 0;
-  height: 60vh;
+  height: 80%;
   width: 100%;
   background-color: white;
   border: 4px solid #053742;
@@ -98,5 +98,27 @@
 
   .detail {
     font-size: 80%;
+  }
+}
+
+/* For thinner screens */
+@media (max-height: 1000px) and (max-width: 800px) {
+  .project_container {
+    /* padding: 0; */
+  }
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    /* .project_container {
+      height: 60%;
+    } */
+
+    @media (max-height: 1000px) and (max-width: 800px) {
+      .project_container {
+        height: 80%;
+      }
+    }
   }
 }

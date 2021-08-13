@@ -58,7 +58,7 @@ export default function About() {
           <FadeInSection>
             <img
               src={sun}
-              alt="Image of Cornell Daily Sun's headquarters"
+              alt="Cornell Daily Sun's headquarters"
               className={styles.about_img}
             />
           </FadeInSection>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './images/crfmc_logo.svg'
+import logo from './images/crfmc_logo_basic.svg'
 
 export default function Logo(props) {
   return (

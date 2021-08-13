@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { Formik, Form, Field, useField } from 'formik'
+import React, { useState } from 'react'
+import { Formik, Form, useField } from 'formik'
+import Axios from 'axios'
 import * as Yup from 'yup'
 
 import * as styles from "./styles_v2/form.module.css"
@@ -24,6 +25,7 @@ const validationSchema = Yup.object().shape({
 
 });
 
+// Define a text field using formik useField
 const MyTextField = ({ label, ...props }) => {
   const [field, meta] = useField(props);
 
@@ -41,7 +43,7 @@ const MyTextField = ({ label, ...props }) => {
   );
 };
 
-
+// Define a text area using formik useField
 const MyTextArea = ({ label, ...props }) => {
   const [field, meta] = useField(props);
 
@@ -60,11 +62,32 @@ const MyTextArea = ({ label, ...props }) => {
 };
 
 
+export default function ContactForm() {
+  const [showThanks, setShowThanks] = useState(false);
 
-export default class ContactForm extends Component {
+  const handleSubmit = (values) => {
 
-  render() {
-    return (
+  // Add date to the values object
+  let now = new Date().toString();
+  values.date = now;
+  console.log(values);
+
+  Axios.post("https://crfmc-backend.herokuapp.com/api/insert", values)
+    .then(data => {
+      setShowThanks(true);
+      console.log(values);
+    });
+
+}
+  
+  return (
+    showThanks ?
+      <div className={styles.thanks_container}>
+        <h1>Thanks for your message!</h1>
+        <h3>I look forward to writing back.</h3>
+        <h3>&#128512;</h3>
+      </div>
+      :
       <div>
         <Formik
           initialValues={{
@@ -76,7 +99,7 @@ export default class ContactForm extends Component {
           }}
           validationSchema={validationSchema}
           onSubmit={
-            values => console.log(values)
+            values => handleSubmit(values)
           }
         >
           {({ errors, touched }) => (
@@ -100,5 +123,4 @@ export default class ContactForm extends Component {
         </Formik>
       </div>
     )
-  }
 }

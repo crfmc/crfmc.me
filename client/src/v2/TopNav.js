@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
   
 import * as styles from './styles_v2/topnav.module.css'
 
@@ -9,23 +9,23 @@ import menu from './images/navlink_logos/menu.svg'
 
 export default function TopNav() {
   const [expandNav, setExpandNav] = useState(false);
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
-  const setNav = () => {
-    if (window.scrollY > 700) {
-      setShow(false);
-    }
-    else {
-      setShow(true);
-    }
-  }
+  // const setNav = () => {
+  //   if (window.scrollY > 700) {
+  //     setShow(false);
+  //   }
+  //   else {
+  //     setShow(true);
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener('scroll', setNav)
-    return () => {
-      window.removeEventListener('scroll', setNav)
-    }
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', setNav)
+  //   return () => {
+  //     window.removeEventListener('scroll', setNav)
+  //   }
+  // }, []);
 
   // Hide scrollbar when showing navigation
   if (expandNav) { document.body.style.overflow = "hidden" }
@@ -81,6 +81,7 @@ export default function TopNav() {
             className={`${styles.expnav_link} ${styles.resume}`}
             href="/crfmc_resume.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setExpandNav(false)}
           >
             Resume

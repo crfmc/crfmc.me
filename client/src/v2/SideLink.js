@@ -7,10 +7,12 @@ export default function SideLink(props) {
     <a
       href={props.href}
       target="_blank"
+      rel="noopener noreferrer"
     >
       <div className={styles.icon_container}>
         <img
-          src={props.icon} alt={props.icon_alt}
+          src={props.icon}
+          alt={props.icon_alt}
           onMouseEnter={() => {setShowName(true) }}
           onMouseLeave={() => {setShowName(false)}}
         />
