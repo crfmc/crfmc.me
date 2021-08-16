@@ -1,6 +1,10 @@
 # crfmc.me
 
-## The repository containing my personal website's first version
+## The repository containing my personal website's first and second versions.
+
+### Design Documentation
+Written documentation on the design are not provided here, but the initial to intermediate wireframes for the most recent version can be viewed in Figma[https://www.figma.com/file/7olQGmnoJPa9CyhbZQMLAe/crfmc.me?node-id=0%3A1]
+
 
 This site was created using React.js, so here's them:
 
