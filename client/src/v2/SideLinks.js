@@ -14,22 +14,26 @@ export default function SideLinks() {
       <SideLink
         icon={github}
         href={"https://github.com/crfmc"}
-        name={"github"}
+        name="github"
+        icon_alt="Open Github profile in new tab."
       />
       <SideLink
         icon={linkedin}
         href={"https://www.linkedin.com/in/cesarferreyramansilla"}
-        name={"linkedin"}
+        name="linkedin"
+        icon_alt="Open LinkedIn profile in new tab."
       />
       <SideLink
         icon={mail}
         href={"mailto:crf85@cornell.edu"}
-        name={"email"}
+        name="email"
+        icon_alt="Create an email to my email."
       />
       <SideLink
         icon={instagram}
         href={"https://www.instagram.com/crfmc/"}
-        name={"instagram"}
+        name={"instagram"
+        } icon_alt="Open Instagram profile in new tab."
       />
       <div className={styles.line}></div>
     </div>

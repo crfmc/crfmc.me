@@ -42,7 +42,7 @@ export default function Project(props) {
           width: "70%",
           height: "90%",
           margin: "auto 2% auto 2%",
-          backgroundImage: "url(" + props.preview + ")",
+          backgroundImage: "url(" + props.backup + ")",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -51,7 +51,12 @@ export default function Project(props) {
         }
         }
         className={styles.project_img_container}
-      ></div>
+      >
+        {/* <video autoPlay loop muted playsInline>
+          <source src={props.preview} type="video/webm"></source>
+          <img src={props.backup} />
+        </video> */}
+      </div>
 
       <div className={styles.project_details}>
         {!props.isSmall &&

@@ -4,10 +4,17 @@ import SectionHeader from './SectionHeader'
 import Project from './Project';
 
 // Importing project previews
-import coviz from "./images/gifs/coviz.gif"
-import fileovr from "./images/gifs/fileovr.gif"
-import hike from './images/gifs/tah.gif'
-import poker from './images/gifs/poker.gif'
+import coviz from "./images/samples/coviz.gif"
+import fileovr from "./images/samples/fileovr.gif"
+import hike from './images/samples/tah.gif'
+import poker from './images/samples/poker.gif'
+
+import vcoviz from "./images/samples/coviz.webm"
+import vfileovr from "./images/samples/fileovr.webm"
+import vhike from './images/samples/tah.webm'
+import vpoker from './images/samples/poker.webm'
+
+
 
 function Projects(props) {
   return (
@@ -16,7 +23,8 @@ function Projects(props) {
       <div className={styles.projects_container}>
         <Project 
           name="Fileovr"
-          preview={fileovr}
+          preview={vfileovr}
+          backup={fileovr}
           members="1"
           languages={["JavaScript"]}
           libraries={["React", "Framer-motion"]}
@@ -25,7 +33,8 @@ function Projects(props) {
         />
         <Project
           name="Coviz"
-          preview={coviz}
+          preview={vcoviz}
+          backup={coviz}
           members="3"
           languages={["JavaScript"]}
           libraries={["D3.js"]}
@@ -34,7 +43,8 @@ function Projects(props) {
         />
         <Project
           name="Poker"
-          preview={poker}
+          preview={vpoker}
+          backup={poker}
           members="3"
           languages={["OCaml"]}
           libraries={["OUnit2"]}
@@ -43,7 +53,8 @@ function Projects(props) {
         />
         <Project
           name="Take a Hike"
-          preview={hike}
+          preview={vhike}
+          backup={hike}
           members="5"
           languages={["Python"]}
           libraries={["Flask"]}
