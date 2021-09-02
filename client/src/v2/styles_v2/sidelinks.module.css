@@ -2,6 +2,7 @@
   width: 20%;
   height: 30vh;
   animation: flowin 2s, fadein 2s;
+  animation-delay: 2s;
 }
 
 .line {

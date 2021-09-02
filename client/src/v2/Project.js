@@ -23,25 +23,11 @@ export default function Project(props) {
       }
       <div
         style={
-          props.isSmall ?
-        {
-          flexGrow: "2",
-          width: "96%",
-          height: "100%",
-          margin: "auto 2% auto 2%",
-          backgroundImage: "url(" + props.preview + ")",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          border: "1px solid white",
-          borderRadius: "5px"
-        }
-          :
         {
           flexGrow: "1",
-          width: "70%",
+          width: "90%",
           height: "90%",
-          margin: "auto 2% auto 2%",
+          margin: "auto",
           backgroundImage: "url(" + props.backup + ")",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",

@@ -1,0 +1,86 @@
+.full_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  z-index: 9;
+  animation: containeranimation 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+}
+
+.content {
+  /* justify-content: center; */
+  margin: auto;
+}
+
+.ripple_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  /* z-index: 10; */
+}
+
+.ripple {
+  margin: auto;
+  animation: rippleanimation 3s;
+}
+
+/* .content img {
+  margin: auto;
+} */
+
+.animated_logo {
+  width: 80px;
+  animation: logoanimation 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes containeranimation {
+  0% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes logoanimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.01);
+    opacity: 0;
+  }
+}
+
+@keyframes logospin {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+
+@keyframes rippleanimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(10);
+  }
+}

@@ -1,11 +1,21 @@
-import React from "react"
+import React, {useEffect} from "react"
 // import Landing from "./v1/components/Landing"
 import Landing from "./v2/Landing";
+import IsLoadingHOC from "./v2/IsLoadingHOC";
 // import { css } from "@emotion/core";
 import "./App.css";
 // import ClipLoader from "react-spinners/ClipLoader";
 
-function App() {
+export const App = props => {
+  const { setLoading } = props;
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3500)
+
+  }, []);
+
   return (
     <>
       <Landing />
@@ -13,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default IsLoadingHOC(App, 'Loading');

@@ -10,6 +10,78 @@
   }
 }
 
+@media (max-height: 1500px) and (max-width: 3400px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
+@media (max-height: 1500px) and (max-width: 3000px) {
+  .full_container {
+    height: 320vh;
+  }
+}
+
+@media (max-height: 1500px) and (max-width: 2500px) {
+  .full_container {
+    height: 300vh;
+  }
+}
+
+@media (max-height: 1400px) and (max-width: 3400px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
+@media (max-height: 1400px) and (max-width: 3000px) {
+  .full_container {
+    height: 350vh;
+  }
+}
+
+@media (max-height: 1400px) and (max-width: 2500px) {
+  .full_container {
+    height: 300vh;
+  }
+}
+
+@media (max-height: 1300px) and (max-width: 3400px) {
+  .full_container {
+    height: 500vh;
+  }
+}
+
+@media (max-height: 1300px) and (max-width: 3000px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
+@media (max-height: 1300px) and (max-width: 2500px) {
+  .full_container {
+    height: 350vh;
+  }
+}
+
+@media (max-height: 1200px) and (max-width: 3400px) {
+  .full_container {
+    height: 500vh;
+  }
+}
+
+@media (max-height: 1200px) and (max-width: 3000px) {
+  .full_container {
+    height: 450vh;
+  }
+}
+
+@media (max-height: 1200px) and (max-width: 2500px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
 /* Stubborn iPad Pro */
 @media (max-height: 1400px) and (max-width: 1200px) {
   .full_container {
@@ -24,9 +96,27 @@
 }
 
 /* For wider screens and laptops */
+@media (max-height: 1000px) and (max-width: 3000px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
+@media (max-height: 1000px) and (max-width: 2000px) {
+  .full_container {
+    height: 350vh;
+  }
+}
+
 @media (max-height: 1000px) and (max-width: 1500px) {
   .full_container {
     height: 300vh;
+  }
+}
+
+@media (max-height: 950px) and (max-width: 2000px) {
+  .full_container {
+    height: 380vh;
   }
 }
 
@@ -36,9 +126,15 @@
   }
 }
 
+@media (max-height: 900px) and (max-width: 1500px) {
+  .full_container {
+    height: 330vh;
+  }
+}
+
 @media (max-height: 850px) and (max-width: 1500px) {
   .full_container {
-    height: 320vh;
+    height: 340vh;
   }
 }
 
@@ -59,9 +155,27 @@
   }
 }
 
+@media (max-height: 850px) and (max-width: 2500px) {
+  .full_container {
+    height: 480vh;
+  }
+}
+
+@media (max-height: 850px) and (max-width: 2000px) {
+  .full_container {
+    height: 450vh;
+  }
+}
+
+@media (max-height: 850px) and (max-width: 1800px) {
+  .full_container {
+    height: 400vh;
+  }
+}
+
 @media (max-height: 800px) and (max-width: 1500px) {
   .full_container {
-    height: 320vh;
+    height: 380vh;
   }
 }
 
@@ -96,7 +210,19 @@
 
 @media (max-height: 650px) and (max-width: 1500px) {
   .full_container {
+    height: 500vh;
+  }
+}
+
+@media (max-height: 550px) and (max-width: 1500px) {
+  .full_container {
     height: 550vh;
+  }
+}
+
+@media (max-height: 500px) and (max-width: 1500px) {
+  .full_container {
+    height: 600vh;
   }
 }
 
