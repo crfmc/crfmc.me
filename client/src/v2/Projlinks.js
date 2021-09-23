@@ -11,7 +11,7 @@ export default function projlinks(props) {
   if (props.github && props.pagelink) {
     return (
       <div className={styles.container}>
-        <a href={props.github_link}>
+        <a href={props.github}>
           <img className={styles.github_link} src={github} alt="gtihub logo (link to source code)" />
         </a>
         <a href={props.pagelink}>
@@ -22,7 +22,7 @@ export default function projlinks(props) {
   } else {
     return (
       <div className={`${styles.container} ${styles.github_only}`}>
-        <a href={props.github_link}>
+        <a href={props.github}>
           <img className={styles.github_link} src={github} alt="gtihub logo (link to source code)" />
         </a>
       </div>

@@ -11,7 +11,7 @@
   margin: 0;
   padding: none;
   animation: fadein 1s;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
 }
 
 .name {
@@ -21,7 +21,7 @@
   padding: none;
   color: #053742;
   animation: fadein 1.5s;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
 }
 
 .subtitle {
@@ -30,8 +30,8 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #a3dafa;
   margin: 0;
-  animation: fadein 2.5s;
-  animation-delay: 2s;
+  animation: fadein 2s;
+  /* animation-delay: 2s; */
 }
 
 .sidelinks_container {

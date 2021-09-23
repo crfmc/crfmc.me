@@ -6,21 +6,27 @@ import IsLoadingHOC from "./v2/IsLoadingHOC";
 import "./App.css";
 // import ClipLoader from "react-spinners/ClipLoader";
 
-export const App = props => {
-  const { setLoading } = props;
+// export const App = props => {
+//   const { setLoading } = props;
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3500)
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setLoading(false);
+//     }, 3500)
 
-  }, []);
+//   }, []);
 
+//   return (
+//     <>
+//       <Landing />
+//     </>
+//   );
+// }
+
+// export default IsLoadingHOC(App, 'Loading');
+
+export default function App(props) {
   return (
-    <>
-      <Landing />
-    </>
+    <Landing />
   );
 }
-
-export default IsLoadingHOC(App, 'Loading');

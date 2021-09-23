@@ -16,7 +16,7 @@
   background-color: #e8eff142;
   border: 1px solid black;
   border-radius: 5px;
-  animation: slidein 3s;
+  animation: slidein 2.5s;
   animation-timing-function: ease-out;
   text-align: center;
 }
