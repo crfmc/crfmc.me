@@ -4,7 +4,7 @@ import React from 'react'
 import github from './images/navlink_logos/github_light.svg'
 import openlink from './images/navlink_logos/openlink.svg'
 
-import * as styles from './styles_v2/projlink.module.css'
+import styles from './styles_v2/projlink.module.css'
 
 export default function projlinks(props) {
 

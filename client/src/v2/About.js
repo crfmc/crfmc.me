@@ -1,7 +1,7 @@
-import React from 'react'
-import * as styles from './styles_v2/about.module.css'
-import SectionHeader from './SectionHeader'
-import FadeInSection from './FadeInSection'
+import React from 'react';
+import styles from './styles_v2/about.module.css';
+import SectionHeader from './SectionHeader';
+import FadeInSection from './FadeInSection';
 
 // Import images
 import tree from './images/tree.png'

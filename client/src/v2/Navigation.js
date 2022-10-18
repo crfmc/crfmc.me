@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from './styles_v2/navigation.module.css'
+import styles from './styles_v2/navigation.module.css'
 import NavLink from './NavLink'
 
 // Importing icons for navigation links

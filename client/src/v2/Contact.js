@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader'
 import ContactForm from "./ContactForm"
 import FadeInSection from './FadeInSection'
 
-import * as styles from './styles_v2/contact.module.css'
+import styles from './styles_v2/contact.module.css'
 
 export default function Contact() {
   return (

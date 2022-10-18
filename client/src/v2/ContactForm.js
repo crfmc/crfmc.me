@@ -3,7 +3,7 @@ import { Formik, Form, useField } from 'formik'
 import Axios from 'axios'
 import * as Yup from 'yup'
 
-import * as styles from "./styles_v2/form.module.css"
+import styles from "./styles_v2/form.module.css"
 
 
 // Create a validation schema using Yup

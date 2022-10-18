@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './images/crfmc_logo_basic.svg'
-import * as styles from './styles_v2/loaderStyle.module.css'
+import styles from './styles_v2/loaderStyle.module.css'
 
 
 const Ripple = () => {

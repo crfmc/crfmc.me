@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from "./styles_v2/projects.module.css"
+import styles from "./styles_v2/projects.module.css"
 import SectionHeader from './SectionHeader'
 import Project from './Project';
 

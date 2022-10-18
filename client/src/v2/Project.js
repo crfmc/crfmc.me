@@ -2,7 +2,7 @@ import React from 'react'
 import Projlinks from './Projlinks'
 import FadeInSection from './FadeInSection';
 
-import * as styles from "./styles_v2/project.module.css"
+import styles from "./styles_v2/project.module.css"
 
 export default function Project(props) {
 
