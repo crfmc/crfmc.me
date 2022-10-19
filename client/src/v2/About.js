@@ -13,13 +13,13 @@ export default function About() {
   const nys23 = "http://specials.cornellsun.com/nys23";
 
   return (
-    <div className={styles.full_container}>
+    <div className="container">
       <FadeInSection from_left={true}>
         <SectionHeader section_name="About" />
       </FadeInSection>
 
-        <div className={styles.subcontainer}>
-          <div className={styles.subcontainer_text}>
+        <div className={styles.subcontainer + " row"}>
+          <div className={styles.subcontainer_text + " m-auto p-0 col-10 p-md-auto col-md-5"}>
             <FadeInSection>
               <h1 className={styles.subcontainer_header}>I began building websites in school.</h1>
             </FadeInSection>
@@ -27,8 +27,8 @@ export default function About() {
               <p className={styles.subcontainer_subtext}>
                 I took my first course on programming for the web during my studies at <b>Cornell University</b>.
               </p>
-          </FadeInSection>
-          <FadeInSection>
+            </FadeInSection>
+            <FadeInSection>
               <p className={styles.subcontainer_subtext}>
                 I learned the basic structures of websites and a <b>user-centered</b> approach for
                 designing them.
@@ -42,7 +42,7 @@ export default function About() {
             </FadeInSection>
           </div>
           
-        <div className={styles.subcontainer_img}>
+        <div className={styles.subcontainer_img + " col-5"}>
           <FadeInSection>
             <img
               src={tree}

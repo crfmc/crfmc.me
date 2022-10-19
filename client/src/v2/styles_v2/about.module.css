@@ -22,13 +22,13 @@
   display: flex;
   flex-direction: row;
   background-color: white;
-  width: 80%;
-  margin: 10% 5%;
+  /* width: 80%; */
+  /* margin: 10% 5%; */
 }
 
 .subcontainer_text {
-  margin: 0 2% 0 5%;
-  width: 100%;
+  /* margin: 0 2% 0 5%; */
+  /* width: 100%; */
 }
 
 .subcontainer_header {
@@ -47,7 +47,7 @@
 
 .subcontainer_img {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   justify-content: center;
 }
@@ -101,7 +101,7 @@
   }
 
   .subcontainer_img {
-    width: 60%;
+    /* width: 60%; */
     margin: 2% auto;
   }
   .subcontainer_subtext {
