@@ -3,7 +3,7 @@
   color: inherit;
   text-decoration: none;
   width: inherit;
-  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .navlink_container {
@@ -16,7 +16,7 @@
   background-color: #e8eff142;
   border: 1px solid black;
   border-radius: 5px;
-  animation: slidein 2.5s;
+  animation: slidein 2s;
   animation-timing-function: ease-out;
   text-align: center;
 }
