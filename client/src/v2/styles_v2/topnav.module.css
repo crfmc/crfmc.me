@@ -29,7 +29,7 @@
 .container img {
   display: flex;
   float: right;
-  width: 5%;
+  width: 40px;
 }
 
 .container img:hover {
@@ -52,8 +52,7 @@
 
 .expnav_close {
   color: white;
-  width: 90%;
-  border: 1px solid white;
+  width: 100%;
   padding: 2%;
   margin: 5% auto 0 5%;
   background-color: transparent;
@@ -103,4 +102,8 @@
 
 /* <400px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 400px) {
+
+  img.expnav_close {
+    width: 20px;
+  }
 }
