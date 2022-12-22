@@ -3,10 +3,10 @@ import SideLink from './SideLink.js'
 import styles from './styles_v2/sidelinks.module.css'
 
 // import icon files
-import github from './images/navlink_logos/github.svg'
-import linkedin from './images/navlink_logos/linkedin.svg'
-import mail from './images/navlink_logos/mail.svg'
-import instagram from './images/navlink_logos/instagram.svg'
+import github from './images/navlink_logos/github_light.svg'
+import linkedin from './images/navlink_logos/linkedin_light.svg'
+import mail from './images/navlink_logos/mail_light.svg'
+import instagram from './images/navlink_logos/instagram_light.svg'
 
 export default function SideLinks() {
   return (
