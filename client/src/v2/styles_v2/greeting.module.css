@@ -22,7 +22,7 @@
   /* font-size: 500%; */
   margin: 0;
   padding: none;
-  color: #053742;
+  color: white;
   animation: fadein 1.5s;
   /* animation-delay: 2s; */
 }
@@ -148,7 +148,7 @@
   }
 
   .name {
-    font-size: 65px;
+    font-size: 62px;
   }
 
   .subtitle {
@@ -161,6 +161,13 @@
     width: 60%;
     height: 50vh;
     margin: 35vh auto 0 80vw;
+  }
+}
+
+/* <900px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 900px) {
+  .sidelinks_container {
+    margin-left: 83vw;
   }
 }
 
@@ -200,22 +207,35 @@
 
   .subtext {
     font-size: 35px;
-    color: #053742;
+    color: #a3dafa;
     font-weight: 200;
   }
+  
 
   .subtext_link {
-    font-size: 100%;
+    font-size: 35px;
     font-weight: 600;
-    color: white;
+    color: #053742;
     width: 450px;
     margin: 5% 0;
     padding: 7%;
-    background-color: #a3dafab0;
-    border: 1px solid #46bbfc;
+    background-color: #a3dafa;
+    border: 1px solid white;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+  }
+
+  .subtext_link:hover {
+    background-color: #d1edfd;
+    color: #053742;
+    border-color: white;
+    text-decoration: none;
+  }
+  .subtext_link:active {
+    background-color: #053742;
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -260,7 +280,7 @@
   }
 
   .name {
-    font-size: 250%;
+    font-size: 38px;
   }
 
   .subtitle {
@@ -274,7 +294,7 @@
 /* <550px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 550px) {
   .hello {
-    font-size: 150%;
+    font-size: 25px;
   }
 
   .name {
@@ -334,7 +354,7 @@
   }
 
   .name {
-    font-size: 180%;
+    font-size: 28px;
   }
 
   .subtitle {
@@ -342,7 +362,7 @@
   }
 
   .subtext_link {
-    font-size: 90%;
+    font-size: 25px;
   }
 }
 
@@ -353,7 +373,7 @@
   }
 
   .name {
-    font-size: 170%;
+    font-size: 25px;
   }
 
   .subtitle {
@@ -365,7 +385,8 @@
   }
 
   .subtext_link {
-    font-size: 80%;
+    font-size: 20px;
+    width: 200px;
   }
 }
 
@@ -376,11 +397,11 @@
   }
 
   .name {
-    font-size: 150%;
+    font-size: 21px;
   }
 
   .subtitle {
-    font-size: 120%;
+    font-size: 18px;
   }
 
   .subtext {
