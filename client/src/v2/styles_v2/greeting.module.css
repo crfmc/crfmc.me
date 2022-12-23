@@ -208,7 +208,7 @@
   
 
   .subtext_link {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     color: #053742;
     width: 450px;
@@ -401,5 +401,12 @@
 
   .subtext {
     font-size: 100%;
+  }
+}
+
+
+@media (max-height: 900px) {
+  .greeting_container {
+    margin-top: 50px;
   }
 }
