@@ -12,6 +12,10 @@
   visibility: visible;
 }
 
+.fade-in-section.is-visible {
+  width: 100%;
+}
+
 .from_left {
   opacity: 0;
   transform: translateX(-10vw);
