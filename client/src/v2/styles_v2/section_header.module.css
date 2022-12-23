@@ -6,7 +6,8 @@
 }
 
 .section_name {
-  font-size: 120%;
+  font-size: 30px;
+  margin: 0;
   font-weight: 300;
   color: #a3dafa;
 }
@@ -18,7 +19,8 @@
 }
 
 .section_name_white {
-  font-size: 120%;
+  font-size: 30px;
+  margin: 0;
   font-weight: 300;
   color: white;
 }
