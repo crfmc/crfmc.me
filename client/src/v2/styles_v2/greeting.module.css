@@ -41,9 +41,8 @@
 .sidelinks_container {
   position: fixed;
   z-index: 2;
-  width: 60%;
-  height: 50vh;
-  margin: 35vh auto 0 80vw;
+  right: 100px;
+  bottom: 150px;
 }
 
 @keyframes fadein {
@@ -57,7 +56,7 @@
   }
 }
 
-/* <1400px screen width ——————————————————————————————————————————————————————————*/
+/* >1600px screen width ——————————————————————————————————————————————————————————*/
 @media (min-width: 1600px) {
   .greeting_container {
     margin-top: 150px;
@@ -100,8 +99,16 @@
   }
 }
 
+/* <1200px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 1200px) {
+}
+
 /* <1050px screen width ——————————————————————————————————————————————————————————*/
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
+  .sidelinks_container {
+    right: 50px;
+  }
+
   .hello {
     font-size: 60px;
   }
@@ -112,14 +119,6 @@
 
   .subtitle {
     font-size: 60px;
-  }
-
-  .sidelinks_container {
-    position: fixed;
-    z-index: 2;
-    width: 60%;
-    height: 50vh;
-    margin: 35vh auto 0 80vw;
   }
 }
 
@@ -156,18 +155,14 @@
   }
 
   .sidelinks_container {
-    position: fixed;
-    z-index: 2;
-    width: 60%;
-    height: 50vh;
-    margin: 35vh auto 0 80vw;
+    right: 30px;
   }
 }
 
 /* <900px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 900px) {
   .sidelinks_container {
-    margin-left: 83vw;
+    /* margin-left: 83vw; */
   }
 }
 
