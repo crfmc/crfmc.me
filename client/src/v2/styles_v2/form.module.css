@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  margin: 5% 20% 0 0;
+  margin: 200px auto 0 0;
 }
 
 .label_input_container {
@@ -16,6 +16,8 @@
 label {
   display: flex;
   flex-direction: column;
+  color: white;
+  font-size: 25px;
 }
 
 .input_field,
@@ -23,14 +25,14 @@ label {
 .message_field {
   padding: 2% 1%;
   border: 0;
-  background-color: #a3dafa1a;
+  background-color: white;
   border-bottom: 1px solid #053742;
 }
 
 .input_field:focus,
 .email_field:focus,
 .message_field:focus {
-  background-color: #a3dafa34;
+  background-color: white;
 }
 
 .input_field {
@@ -44,15 +46,16 @@ label {
 }
 
 .error {
+  font-size: 23px;
   color: rgb(226, 64, 64);
 }
 
 .submit_button {
-  font-size: 150%;
-  width: 40%;
+  font-size: 30px;
+  width: 400px;
   color: white;
   margin: 10% auto auto 20%;
-  padding: 1% 2%;
+  padding: 20px 30px;
   border: 1px solid #053742;
   border-radius: 5px;
   background-color: #46bbfc;
@@ -60,11 +63,14 @@ label {
 }
 
 .submit_button:hover {
-  background-color: #46bcfcf1;
+  cursor: pointer;
+  background-color: #46bcfcc7;
 }
 
-.submit_button:hover {
-  cursor: pointer;
+.submit_button:active {
+  background-color: white;
+  color: #053742;
+  border-color: #053742;
 }
 
 .thanks_container {
@@ -81,4 +87,60 @@ label {
 .thanks_container h3 {
   margin: 2% auto;
   color: #053742;
+}
+
+/* (<1400px)———————————————————————————— */
+@media (max-width: 1400px) {
+  label {
+    font-size: 21px
+  }
+  .error {
+    font-size: 21px;
+  }
+}
+
+/* (<1100px)———————————————————————————— */
+@media (max-width: 1100px) {
+
+  .form_container {
+    margin: 300px auto auto auto;
+  }
+
+  .label_input_container {
+    width: 80%;
+  }
+
+  label {
+    font-size: 21px
+  }
+
+  .submit_button {
+    width: 300px;
+    margin-left: 10%;
+  }
+}
+
+/* (<850px)———————————————————————————— */
+@media (max-width: 850px) {
+
+  .form_container {
+    margin: 100px auto;
+  }
+
+  .label_input_container {
+    width: 100%;
+  }
+  
+  .input_field {
+    width: 100%;
+  }
+
+  label {
+    font-size: 21px
+  }
+
+  .submit_button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
