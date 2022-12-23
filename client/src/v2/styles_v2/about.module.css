@@ -191,6 +191,7 @@
   .subcontainer_img {
     /* width: 60%; */
     margin: 2% auto;
+    margin-bottom: 30px;
   }
   .subcontainer_subtext {
     margin: 20px 0;
