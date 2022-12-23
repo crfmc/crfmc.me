@@ -9,19 +9,19 @@ a {
 }
 
 .icon_container img {
-  width: 15%;
-  padding: 5% 0;
+  width: 44px;
+  padding: 12px 0;
 }
 
 .icon_name {
-  font-size: 60%;
-  text-decoration: none;
-  margin: auto 5%;
-  color: #E8EFF1;
+  position: absolute;
+  left: 58px;
+  margin-top: 20px;
+  color: white;
 }
 
 .icon_name:visited {
-  color: black;
+  color: white;
 }
 
 .hidden {
@@ -37,13 +37,23 @@ a {
   }
 }
 
-/* <900px screen width */
-@media (max-width: 900px) {
+/* <1200px screen width */
+@media (max-width: 1200px) {
   .icon_name {
     display: none;
   }
+
+  .icon_container img {
+    width: 32px;
+    padding: 10px 0;
+  }
+}
+
+/* <900px screen width */
+@media (max-width: 900px) {
   .icon_container img {
     width: 20px;
+    padding: 5px 0;
   }
   .icon_container img:hover {
     width: 22px;
