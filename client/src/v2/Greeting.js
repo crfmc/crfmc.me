@@ -5,7 +5,7 @@ import SideLinks from './SideLinks'
 function Greeting(props)
 {
   return (
-    <div className={styles.greeting_container + " container-fluid col-10"}>
+    <div className={styles.greeting_container + " container-fluid col-11 col-sm-10"}>
       { props.topNav &&
         <div className={styles.topNavPad}></div>
       }
