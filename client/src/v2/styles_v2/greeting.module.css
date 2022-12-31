@@ -170,7 +170,7 @@
 /* Top navigation activated */
 @media (max-width: 850px) {
   .greeting_container {
-    margin-top: 20vh;
+    margin-top: 150px;
   }
 
   .hello {
@@ -405,8 +405,8 @@
 }
 
 
-@media (max-height: 900px) {
+@media (max-height: 700px) {
   .greeting_container {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }
