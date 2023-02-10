@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Formik, Form, useField } from 'formik'
-import Axios from 'axios'
-import * as Yup from 'yup'
+import * as Yup from 'yup';
 
 import styles from "./styles_v2/form.module.css"
 
@@ -72,11 +71,18 @@ export default function ContactForm() {
   values.date = now;
   console.log(values);
 
-  Axios.post("https://crfmc-backend.herokuapp.com/api/insert", values)
-    .then(data => {
-      setShowThanks(true);
-      console.log(values);
-    });
+  fetch('https://intrepid-alloy-377416.uk.r.appspot.com/api/insert', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(values),
+  }).then((response) => response.json()).then((data) => {
+    setShowThanks(true);
+    console.log('Success:', data);
+  }).catch((error) => {
+    console.error('Error:', error);
+  });
 
 }
   
