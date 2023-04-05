@@ -6,9 +6,9 @@
 }
 
 .line {
-  border-left: 2px solid #053742;
+  border-left: 2px solid #E8EFF1;
   height: 600px;
-  margin-left: 7%;
+  margin-left: 22px;
 }
 
 /* Safari 11+ */
@@ -47,24 +47,10 @@
   }
 }
 
-/* <1400px screen height */
-@media (max-height: 2000px) {
-  .container {
-    margin-top: 30vh;
-  }
-}
-
-/* <1400px screen height */
-@media (max-height: 1400px) {
-  .container {
-    margin-top: 20vh;
-  }
-}
-
-/* <1400px screen height */
-@media (max-height: 1200px) {
-  .container {
-    margin-top: 10vh;
+/* <1200px screen width */
+@media (max-width: 1200px) {
+  .line {
+    margin-left: 16px;
   }
 }
 
@@ -74,6 +60,14 @@
     width: 30%;
   }
 }
+
+/* <900px screen width */
+@media (max-width: 900px) {
+  .line {
+    margin-left: 11px;
+  }
+}
+
 
 /* <850px screen width */
 @media (max-width: 850px) {

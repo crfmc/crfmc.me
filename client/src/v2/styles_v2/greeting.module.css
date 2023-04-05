@@ -1,11 +1,13 @@
 .greeting_container {
   margin-top: 5vh;
-  padding: 5%;
-  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* padding-left: 10%; */
 }
 
 .hello {
-  font-size: 300%;
+  font-size: 60px;
+  /* font-size: 300%; */
   font-weight: 300;
   color: #46bbfc;
   margin: 0;
@@ -16,16 +18,18 @@
 
 .name {
   /* color: white; */
-  font-size: 500%;
+  font-size: 100px;
+  /* font-size: 500%; */
   margin: 0;
   padding: none;
-  color: #053742;
+  color: white;
   animation: fadein 1.5s;
   /* animation-delay: 2s; */
 }
 
 .subtitle {
-  font-size: 400%;
+  /* font-size: 400%; */
+  font-size: 80px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: #a3dafa;
@@ -37,9 +41,8 @@
 .sidelinks_container {
   position: fixed;
   z-index: 2;
-  width: 60%;
-  height: 50vh;
-  margin: 35vh auto 0 80vw;
+  right: 100px;
+  bottom: 150px;
 }
 
 @keyframes fadein {
@@ -53,26 +56,69 @@
   }
 }
 
-/* <1050px screen width ——————————————————————————————————————————————————————————*/
-@media (max-width: 1050px) {
+/* >1600px screen width ——————————————————————————————————————————————————————————*/
+@media (min-width: 1600px) {
+  .greeting_container {
+    margin-top: 150px;
+  }
+
   .hello {
-    font-size: 250%;
+    font-size: 50px;
+  }
+  .name {
+    font-size: 100px;
+  }
+  .subtitle {
+    font-size: 85px;
+  }
+}
+
+/* <1400px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 1400px) {
+  .greeting_container {
+    margin-top: 10vh;
+  }
+}
+
+/* <1300px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 1300px) {
+  .greeting_container {
+    margin-top: 150px;
+  }
+
+  .hello {
+    font-size: 50px;
   }
 
   .name {
-    font-size: 450%;
+    font-size: 80px;
   }
 
   .subtitle {
-    font-size: 350%;
+    font-size: 65px;
+  }
+}
+
+/* <1200px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 1200px) {
+}
+
+/* <1050px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 1200px) {
+  .sidelinks_container {
+    right: 50px;
   }
 
-  .sidelinks_container {
-    position: fixed;
-    z-index: 2;
-    width: 60%;
-    height: 50vh;
-    margin: 35vh auto 0 80vw;
+  .hello {
+    font-size: 60px;
+  }
+
+  .name {
+    font-size: 75px;
+  }
+
+  .subtitle {
+    font-size: 60px;
   }
 }
 
@@ -97,23 +143,26 @@
 /* <1000px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 1000px) {
   .hello {
-    font-size: 180%;
+    font-size: 40px;
   }
 
   .name {
-    font-size: 380%;
+    font-size: 62px;
   }
 
   .subtitle {
-    font-size: 280%;
+    font-size: 50px;
   }
 
   .sidelinks_container {
-    position: fixed;
-    z-index: 2;
-    width: 60%;
-    height: 50vh;
-    margin: 35vh auto 0 80vw;
+    right: 30px;
+  }
+}
+
+/* <900px screen width ——————————————————————————————————————————————————————————*/
+@media (max-width: 900px) {
+  .sidelinks_container {
+    /* margin-left: 83vw; */
   }
 }
 
@@ -121,49 +170,67 @@
 /* Top navigation activated */
 @media (max-width: 850px) {
   .greeting_container {
-    margin-top: 20vh;
+    margin-top: 150px;
   }
 
   .hello {
-    font-size: 170%;
-    margin-bottom: 2%;
+    font-size: 40px;
+    margin-bottom: 20px;
   }
 
   .name {
-    font-size: 350%;
-    margin-bottom: 2%;
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  .last_name {
+    /* display: none; */
   }
 
   .subtitle {
-    font-size: 300%;
-    margin-bottom: 2%;
+    font-size: 45px;
+    margin-bottom: 20px;
   }
 
   .subtext_container {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     margin: 5% auto 0 0;
     animation: fadein 3s;
   }
 
   .subtext {
-    font-size: 150%;
-    color: #95d2f5;
+    font-size: 35px;
+    color: #a3dafa;
+    font-weight: 200;
   }
+  
 
   .subtext_link {
-    font-size: 100%;
+    font-size: 30px;
     font-weight: 600;
-    color: white;
-    width: 30%;
+    color: #053742;
+    width: 450px;
     margin: 5% 0;
-    padding: 5%;
-    background-color: #a3dafab0;
-    border: 1px solid #46bbfc;
+    padding: 7%;
+    background-color: #a3dafa;
+    border: 1px solid white;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+  }
+
+  .subtext_link:hover {
+    background-color: #d1edfd;
+    color: #053742;
+    border-color: white;
+    text-decoration: none;
+  }
+  .subtext_link:active {
+    background-color: #053742;
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -180,6 +247,10 @@
   .subtitle {
     font-size: 250%;
   }
+
+  .subtext_link {
+    width: 400px;
+  }
 }
 
 /* <700px screen width ——————————————————————————————————————————————————————————*/
@@ -189,11 +260,11 @@
   }
 
   .name {
-    font-size: 300%;
+    font-size: 42px;
   }
 
   .subtitle {
-    font-size: 250%;
+    font-size: 35px;
   }
 }
 
@@ -204,30 +275,37 @@
   }
 
   .name {
-    font-size: 250%;
+    font-size: 38px;
   }
 
   .subtitle {
     font-size: 200%;
+  }
+  .subtext {
+    font-size: 30px;
   }
 }
 
 /* <550px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 550px) {
   .hello {
-    font-size: 150%;
+    font-size: 25px;
   }
 
   .name {
-    font-size: 220%;
+    font-size: 34px;
   }
 
   .subtitle {
-    font-size: 180%;
+    font-size: 28px;
   }
 
   .subtext {
-    font-size: 130%;
+    font-size: 25px;
+  }
+
+  .subtext_link {
+    width: 350px;
   }
 }
 
@@ -240,15 +318,15 @@
 /* <480px screen width ——————————————————————————————————————————————————————————*/
 @media (max-width: 480px) {
   .hello {
-    font-size: 120%;
+    font-size: 25px;
   }
 
   .name {
-    font-size: 200%;
+    font-size: 30px;
   }
 
   .subtitle {
-    font-size: 150%;
+    font-size: 25px;
   }
 
   .subtext_container {
@@ -256,7 +334,11 @@
   }
 
   .subtext {
-    font-size: 120%;
+    font-size: 21px;
+  }
+
+  .subtext_link {
+    width: 300px;
   }
 }
 
@@ -267,7 +349,7 @@
   }
 
   .name {
-    font-size: 180%;
+    font-size: 28px;
   }
 
   .subtitle {
@@ -275,7 +357,7 @@
   }
 
   .subtext_link {
-    font-size: 90%;
+    font-size: 25px;
   }
 }
 
@@ -286,7 +368,7 @@
   }
 
   .name {
-    font-size: 170%;
+    font-size: 25px;
   }
 
   .subtitle {
@@ -298,7 +380,8 @@
   }
 
   .subtext_link {
-    font-size: 80%;
+    font-size: 20px;
+    width: 200px;
   }
 }
 
@@ -309,14 +392,21 @@
   }
 
   .name {
-    font-size: 150%;
+    font-size: 21px;
   }
 
   .subtitle {
-    font-size: 120%;
+    font-size: 18px;
   }
 
   .subtext {
     font-size: 100%;
+  }
+}
+
+
+@media (max-height: 700px) {
+  .greeting_container {
+    margin-top: 80px;
   }
 }

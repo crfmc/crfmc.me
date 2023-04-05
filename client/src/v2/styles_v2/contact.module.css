@@ -10,18 +10,17 @@
   flex-direction: column;
   width: 40%;
   height: 100%;
-  background-color: #a3dafac7;
-  padding: 5% 0;
+  background-color: #00000047;
+  padding: 150px 0 300px 0;
 }
 
 .contact_text {
   width: 80%;
   margin: 2% auto;
-  color: #053742;
 }
 
 .header {
-  font-size: 350%;
+  font-size: 70px;
   color: white;
 }
 
@@ -29,7 +28,8 @@
   margin: 10% auto;
   line-height: 150%;
   font-weight: 300;
-  font-size: 150%;
+  color: white;
+  font-size: 35px;
 }
 
 .text b {
@@ -42,13 +42,24 @@
   padding: 2% 0 0 0;
 }
 
-@media (max-width: 800px) {
-  .contact_container {
-    width: 100%;
+/* (<1400px)———————————————————————————— */
+@media (max-width: 1400px) {
+  .header {
+    font-size: 60px;
+  }
+  .text {
+    font-size: 28px;
   }
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 800px) {
+  .contact_container {
+    width: 100%;
+  }
+} */
+
+/* (<850px)———————————————————————————— */
+@media (max-width: 850px) {
   .contact_container {
     width: 100%;
     flex-direction: column;
@@ -62,5 +73,12 @@
   .contact_right {
     width: 100%;
     padding: 5%;
+  }
+}
+
+/* (<850px)———————————————————————————— */
+@media (max-width: 850px) {
+  .contact_left {
+    padding: 150px 0 200px 0;
   }
 }

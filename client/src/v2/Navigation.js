@@ -9,7 +9,7 @@ import resume from './images/navlink_logos/resume.svg'
 
 export default function Navigation(){
   return (
-    <div className={styles.navigation_container}>
+    <div className={styles.navigation_container + " container-fluid col-10"}>
       <NavLink
         icon={face}
         icon_alt="Minimalist face logo"

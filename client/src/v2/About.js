@@ -18,8 +18,8 @@ export default function About() {
         <SectionHeader section_name="About" />
       </FadeInSection>
 
-        <div className={styles.subcontainer + " row"}>
-          <div className={styles.subcontainer_text + " m-auto p-0 col-10 p-md-auto col-md-5"}>
+        <div className={styles.subcontainer + " col-11 col-sm-10"}>
+          <div className={styles.subcontainer_text + " m-auto col-12 col-md-10 m-lg-0 col-lg-5"}>
             <FadeInSection>
               <h1 className={styles.subcontainer_header}>I began building websites in school.</h1>
             </FadeInSection>
@@ -42,7 +42,7 @@ export default function About() {
             </FadeInSection>
           </div>
           
-        <div className={styles.subcontainer_img + " col-5"}>
+        <div className={styles.subcontainer_img + " col-12 col-md-8 offset-0 col-lg-5 offset-lg-1"}>
           <FadeInSection>
             <img
               src={tree}
@@ -53,8 +53,8 @@ export default function About() {
         </div>
       </div>
       
-      <div className={styles.subcontainer}>
-        <div className={styles.subcontainer_img}>
+      <div className={styles.subcontainer + " col-11 col-sm-10"}>
+        <div className={styles.subcontainer_img + " col-12 col-md-8 col-lg-5"}>
           <FadeInSection>
             <img
               src={sun}
@@ -63,7 +63,7 @@ export default function About() {
             />
           </FadeInSection>
         </div>
-        <div className={styles.subcontainer_text}>
+        <div className={styles.subcontainer_text + " col-12 col-md-10 col-lg-5 offset-lg-1"}>
           <FadeInSection>
             <h1 className={styles.subcontainer_header}>
               I joined a team of developers.
@@ -92,8 +92,8 @@ export default function About() {
         </div>
       </div>
 
-      <div className={styles.subcontainer}>
-        <div className={styles.subcontainer_text}>
+      <div className={styles.subcontainer + " container-fluid col-11 col-md-10"}>
+        <div className={styles.subcontainer_text + " col-12 col-sm-10 m-auto"}>
           <FadeInSection>
             <div className={styles.transition_subtext}>
               <p>
