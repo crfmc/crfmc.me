@@ -74,8 +74,7 @@ export default function About() {
           <FadeInSection>
             <p className={styles.subcontainer_subtext}>
               A year later I had the privilege of working on the <a href="https://cornellsun.com/"><b>Cornell Daily Sun's Web Team</b></a> where I
-              helped design and implement experimental web pages like <a href={spotlights}><b>this one</b></a>
-              , <a href={covid}><b>this one</b></a>, and <a href={nys23}><b>this one</b></a>.
+              helped design and implement experimental web pages.
             </p>
           </FadeInSection>
           <FadeInSection>
